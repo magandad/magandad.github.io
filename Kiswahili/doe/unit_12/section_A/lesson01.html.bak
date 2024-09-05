@@ -1,0 +1,64 @@
+
+
+
+<html>
+<head>
+<title>KIKO: Lesson Title, Video Selection</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<SCRIPT SRC="../../scripts/glossary.js" LANGUAGE="Javascript"></SCRIPT>
+<script language="JavaScript">
+<!--
+
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+
+//-->
+</script>
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<DIV ID="glossaryDefinition" STYLE="position:absolute; z-index:0; visibility: hidden; background-color: #CCCCFF; layer-background-color: #CCCCFF; border: 1px none #000000"></DIV>
+<table border="0" cellpadding="4" cellspacing="0" width="100%">
+  <tr> 
+    <td><img src="../../media/images/kikoLogo.gif" width="173" height="78"></td>
+    <td> 
+      <p align="right"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><a href="../../index.html">Home<br>
+        </a></font><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><a href="../../overview.html">Overview<br>
+        </a></font><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><a href="../../techHelp.html">Technical 
+        Help</a></font></p>
+    </td>
+  </tr>
+  <tr> 
+    <td colspan="2" bgcolor="#CCCCFF"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><A HREF="../../unitSelect.html">Select 
+      Unit </A> &gt; <A HREF="../index.html">Unit 12: <I>Uganga wa jadi</I></A> &gt; 
+      <b>Lesson 1: </b></font></td>
+  </tr>
+  <tr> 
+    <td colspan="2"> 
+      <table width="100%" border="0" cellspacing="4">
+        <tr> 
+          <td valign="top"> 
+            <p align="center"><embed src="../../media/av/unit12/Movies/u12l01a.mov" width=320 height=256 autoplay=false controller=true loop=false pluginspage="http://www.apple.com/quicktime/">
+              </embed></p>
+            <p align="center"><a href="#" onClick="MM_openBrWindow('../../kikoculturey2.html#unit12','culturalNote','scrollbars=yes,resizable=yes,width=400,height=300')"><img src="../../media/images/culturalNote.gif" width="106" height="28" border="0"></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" onClick="MM_openBrWindow('../../kikogrammary2.html#unit12','grammarNote','scrollbars=yes,resizable=yes,width=400,height=300')"><img src="../../media/images/grammarNote.gif" width="106" height="28" border="0"></a></p>
+          </td>
+          <td valign="top"> 
+            <P><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Waganga wa jadi</p><p>
+</p><p>
+Wagonjwa wengi huwategemea <A HREF="#" onMouseOver="showGloss('traditional healers');" onMouseout="hideGloss();">waganga wa jadi</A>.  Kuna sababu tatu maalum.  Moja, waganga wa jadi <A HREF="#" onMouseOver="showGloss('they treated');" onMouseout="hideGloss();">waliwatibu</A> watu walioishi katika vijiji vyao kabla ya <A HREF="#" onMouseOver="showGloss('health services');" onMouseout="hideGloss();">huduma za afya</A> za <A HREF="#" onMouseOver="showGloss('modern');" onMouseout="hideGloss();">kisasa</A> kuanzishwa katika vijiji.  Mbili, watu wengi bado wanakaa mbali na vituo vya afya, kwa hivyo waganga wa jadi wanaendelea kutoa <A HREF="#" onMouseOver="showGloss('initial treatment');" onMouseout="hideGloss();">matibabu ya awali</A> kwa wagonjwa katika jamii zao.  Tatu, baadhi ya wananchi <A HREF="#" onMouseOver="showGloss('they believe');" onMouseout="hideGloss();">wanaamini</A> zaidi matibabu ya jadi.  Hutafuta matibabu ya kisasa kama mganga wa jadi <A HREF="#" onMouseOver="showGloss('he advises');" onMouseout="hideGloss();">anashauri</A> hivyo.  Leo tunawatembelea waganga mbalimbali na kuona shughuli zao.  Karibuni katika uganga wa jadi.  Hiki ni kituo cha Kilingemoto.  Huyu ni mganga na wasaidizi wake.  Pamoja na kutibu wagonjwa, mganga huyu huwafundisha vijana juu ya utamaduni wa uganga wa jadi.</p><p>
+</p><p>
+</p><p>
+
+          </td>
+        </tr>
+      </table>
+      <p><!-- #BeginLibraryItem "../Library/footer.lbi" --><font face="Verdana, Arial, Helvetica, sans-serif" size="2">&copy; African Studies 
+Program, University of Georgia.</font><!-- #EndLibraryItem --></p>
+    </td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+
+</body>
+</html>

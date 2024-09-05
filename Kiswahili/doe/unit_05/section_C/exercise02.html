@@ -1,0 +1,433 @@
+
+
+<HTML><HEAD><TITLE>Zoezi la sita: Exercise 6</TITLE></HEAD>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function check(form){
+
+if (form.textbox.value == form.textbox1.value){
+
+alert("Sawa.");
+
+}
+
+else{
+
+alert("Si Sawa. Jarribu tena");
+
+}
+
+}
+
+function addit(text, form){
+
+if(form.textbox.value == ""){
+
+form.textbox.value = text;
+
+}
+
+else{
+
+form.textbox.value = form.textbox.value + " " + text;
+
+}
+
+}
+
+function mailIt(form) {
+
+  var data = document.mailForm
+
+  var userInfo = "" 
+
+ var mytext = "" 
+
+ if(data.recipient.value == ""){ 
+
+  alert("You must enter your teacher's address!"); 
+
+   return false;
+
+ }
+
+ else{ 
+
+ userInfo += "To: " + data.recipient.value + "\n" 
+
+ }
+
+ if (data.emailad.value == ""){ 
+
+alert("You need to enter your email address also!"); 
+
+return false;
+
+}
+
+ else{
+
+userInfo += "From: " + data.emailad.value + "\n" 
+
+}
+
+userInfo += "Subject: " + "Student exercise" + "\n\n" 
+
+userInfo += "Student: " + data.student.value + "\n" 
+
+userInfo += "Page Title:  " + document.title + "\n\n" 
+
+data = document.testForm1
+
+if(data.textbox.value != ""){
+
+mytext += "Sentence 1 = "  + data.textbox.value + "\n" 
+
+}
+
+data = document.testForm2
+
+if(data.textbox.value != ""){
+
+mytext += "Sentence 2 = "  + data.textbox.value + "\n" 
+
+}
+
+data = document.testForm3
+
+if(data.textbox.value != ""){
+
+mytext += "Sentence 3 = "  + data.textbox.value + "\n" 
+
+}
+
+data = document.testForm4
+
+if(data.textbox.value != ""){
+
+mytext += "Sentence 4 = "  + data.textbox.value + "\n" 
+
+}
+
+data = document.testForm5
+
+if(data.textbox.value != ""){
+
+mytext += "Sentence 5 = "  + data.textbox.value + "\n" 
+
+}
+
+form.mailBody.value = "(bs)" + userInfo + mytext + "\n" + "(es)" 
+
+form.action = "http://ccat.sas.upenn.edu/cgi-bin/tamil/sendkiko" 
+
+return true
+
+}
+
+</script>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+
+
+  <table border="0" cellpadding="4" cellspacing="0" width="100%">
+
+    <tr> 
+
+      <td><img src="../../media/images/kikoLogo.gif" width="173" height="78"></td>
+
+      <td> 
+
+        
+      <p align="right"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><a href="../../index.html">Home<br>
+        </a></font><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><a href="../../overview.html">Overview<br>
+        </a></font><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><a href="../../techHelp.html">Technical 
+        Help</a></font></p>
+
+      </td>
+
+    </tr>
+
+    <tr> 
+
+      
+    <td colspan="2" bgcolor="#CCCCFF"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><a href="../../unitSelect.html">Select 
+      Unit </a> &gt; <a href="../index.html">Unit 5: Kununua na Kuuza</a> &gt; 
+      <b>Exercise 6:</b></font></td>
+
+    </tr>
+</table>
+
+<center>
+  <div align="left"><br>
+    <font color="#333333" size="4" face="Verdana, Arial, Helvetica, sans-serif">Exercise 
+    6: Zoezi la sita</font><br>
+    <font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif"><br>
+    Rudia somo la tano na la sita. Review lessons 5 and 6.<br>
+    Panga maneno baada ya neon la kwanza yafanye sentensi kamili. (Arrange the
+     words after the first to make a complete sentence.)</font></div>
+</center>
+
+<form name=testForm1>
+
+  <table border=0>
+    <tr><td>
+
+<textarea name=textbox cols=55 rows=4 wrap=virtual></textarea></td>
+
+<input type=hidden name=textbox1 value="Mteja ananunua stempu za shilingi sabini sabini">
+
+<td><input type=button value='Check' onClick="javascript:check(this.form)"><br>
+
+<input type=reset value="Clear"></td></tr></table>
+
+<center>
+    <table border=0 align="left">
+      <tr bgcolor="#FFFFFF"> 
+        <td width="29"> 
+          <input type=button width=25 value="Mteja" onClick="javascript:addit(value, this.form)">
+        </td>
+        <td width="25"> 
+          <input type=button width=25 value="shilingi" onClick="javascript:addit(value, this.form)">
+        </td>
+        <td width="29"> 
+          <input type=button width=25 value="sabini" onClick="javascript:addit(value, this.form)">
+        </td>
+        <td width="29"> 
+          <input type=button width=25 value="ananunua" onClick="javascript:addit(value, this.form)">
+        </td>
+        <td width="29"> 
+          <input type=button width=25 value="sabini" onClick="javascript:addit(value, this.form)">
+        </td>
+        <td width="16"> 
+          <input type=button width=25 value="za" onClick="javascript:addit(value, this.form)" name="button3">
+        </td>
+        <td width="14">
+          <input type=button width=25 value="stempu" onClick="javascript:addit(value, this.form)" name="button42">
+        </td>
+      
+      </tr>
+    </table>
+  </center></form>
+
+<form name=testForm2>
+  <br>
+  <table border=0>
+    <tr><td>
+
+<textarea name=textbox cols=55 rows=4 wrap=virtual></textarea></td>
+
+<input type=hidden name=textbox1 value="Naomba stempu za shilingi mia moja">
+
+      <td>
+        <input type=button value='Check' onClick="javascript:check(this.form)" name="button">
+        <br>
+
+<input type=reset value="Clear"></td></tr></table>
+
+<center>
+    <table border=0 align="left" width="290">
+      <tr bgcolor="#FFFFFF"> 
+        <td> 
+          <input type=button width=25 value="Naomba" onClick="javascript:addit(value, this.form)" name="button5">
+        </td>
+
+        <td> 
+          <input type=button width=25 value="moja" onClick="javascript:addit(value, this.form)">
+        </td>
+
+        <td> 
+          <input type=button width=25 value="za" onClick="javascript:addit(value, this.form)">
+        </td>
+
+        <td> 
+          <input type=button width=25 value="stempu" onClick="javascript:addit(value, this.form)">
+        </td>
+
+        <td> 
+          <input type=button width=25 value="shilingi" onClick="javascript:addit(value, this.form)">
+        </td>
+		<td> 
+          <input type=button width=25 value="mia" onClick="javascript:addit(value, this.form)">
+        </td>
+</tr></table></center></form>
+
+<br>
+<form name=testForm3>
+
+  <table border=0>
+    <tr><td>
+
+<textarea name=textbox cols=55 rows=4 wrap=virtual></textarea></td>
+
+<input type=hidden name=textbox1 value="Mteja ananunua stempu kumi za shilingi mia nane">
+
+      <td>
+        <input type=button value='Check' onClick="javascript:check(this.form)" name="button2">
+        <br>
+
+<input type=reset value="Clear"></td></tr></table>
+
+<center>
+    <table border=0 align="left" width="307">
+      <tr bgcolor="#FFFFFF"> 
+        <td> 
+          <input type=button width=25 value="Mteja" onClick="javascript:addit(value, this.form)">
+        </td>
+        <td> 
+          <input type=button width=25 value="shilingi" onClick="javascript:addit(value, this.form)">
+        </td>
+        <td> 
+          <input type=button width=25 value="za" onClick="javascript:addit(value, this.form)">
+        </td>
+        <td> 
+          <input type=button width=25 value="stempu" onClick="javascript:addit(value, this.form)">
+        </td>
+		 <td> 
+          <input type=button width=25 value="mia" onClick="javascript:addit(value, this.form)">
+        </td>
+		 <td> 
+          <input type=button width=25 value="ananunua" onClick="javascript:addit(value, this.form)">
+        </td>
+		 <td> 
+          <input type=button width=25 value="kumi" onClick="javascript:addit(value, this.form)">
+        </td>
+		 <td> 
+          <input type=button width=25 value="nane" onClick="javascript:addit(value, this.form)">
+        </td>
+      </tr>
+    </table>
+  </center></form>
+
+<br>
+<form name=testForm4>
+
+  <table border=0>
+    <tr><td>
+
+<textarea name=textbox cols=55 rows=4 wrap=virtual></textarea></td>
+
+<input type=hidden name=textbox1 value="Itunze risiti yako mpaka utakapopata jibu">
+
+<td><input type=button value='Check' onClick="javascript:check(this.form)"><br>
+
+<input type=reset value="Clear"></td></tr></table>
+
+<center>
+    <table border=0 align="left" width="289">
+      <tr bgcolor="#FFFFFF"> 
+        <td height="35" width="59"> 
+          <input type=button width=25 value="Itunze" onClick="javascript:addit(value, this.form)">
+        </td>
+        <td height="35" width="67"> 
+          <input type=button width=25 value="mpaka" onClick="javascript:addit(value, this.form)">
+        </td>
+        <td height="35" width="75"> 
+          <input type=button width=25 value="jibu" onClick="javascript:addit(value, this.form)">
+        </td>
+        <td height="35" width="70"> 
+          <input type=button width=25 value="risiti" onClick="javascript:addit(value, this.form)">
+        </td>
+		  <td height="35" width="70"> 
+          <input type=button width=25 value="utakapopata" onClick="javascript:addit(value, this.form)">
+        </td>
+		  <td height="35" width="70"> 
+          <input type=button width=25 value="yako" onClick="javascript:addit(value, this.form)">
+        </td>
+      </tr>
+    </table>
+  </center></form>
+
+<form name=testForm5>
+  <br>
+
+  <p>&nbsp;</p>
+  <table border=0>
+    <tr>
+      <td> 
+        <textarea name=textbox cols=55 rows=4 wrap=virtual></textarea>
+      </td>
+      <input type=hidden name=textbox1 value="Hii ni shiti ya shilingi mia tano">
+      <td>
+        <input type=button value='Check' onClick="javascript:check(this.form)" name="button7">
+        <br>
+        <input type=reset value="Clear" name="reset">
+      </td>
+    </tr>
+  </table>
+  <table border=0 align="left">
+    <tr bgcolor="#FFFFFF"> 
+      <td> 
+        <input type=button width=25 value="Hii" onClick="javascript:addit(value, this.form)" name="button6">
+      </td>
+      <td> 
+        <input type=button width=25 value="ya" onClick="javascript:addit(value, this.form)" name="button6">
+      </td>
+      <td> 
+        <input type=button width=25 value="shilingi" onClick="javascript:addit(value, this.form)" name="button6">
+      </td>
+      <td> 
+        <input type=button width=25 value="shiti" onClick="javascript:addit(value, this.form)" name="button6">
+      </td>
+	  <td> 
+        <input type=button width=25 value="mia" onClick="javascript:addit(value, this.form)" name="button6">
+      </td>
+	  <td> 
+        <input type=button width=25 value="ni" onClick="javascript:addit(value, this.form)" name="button6">
+      </td>
+	  <td> 
+        <input type=button width=25 value="tano" onClick="javascript:addit(value, this.form)" name="button6">
+      </td>
+    </tr>
+  </table>
+  <br>
+  <br>
+  <br>
+
+
+<table></form>
+
+<form name = "mailForm" 
+
+Action = "" 
+
+METHOD = "post" 
+
+ENCTYPE = "multipart/form-data" 
+
+onSubmit="return mailIt(this)">
+
+<INPUT TYPE="hidden" NAME="mailBody" VALUE="">
+
+<tr><td>Instructor's Email: <input size='30' NAME='recipient'></tr><br>
+
+<tr><td>Your Name: <input size='30' NAME='student'></tr><br>
+
+<tr><td>Your email: <input size='30' NAME='emailad'></tr><br>
+
+<tr>
+
+<TD COLSPAN=2 ALIGN=center>
+
+<INPUT TYPE="submit" VALUE="Send it.">
+
+</TR>
+
+</FORM>
+
+</table>
+
+<br>
+<table border=0 width="100%">
+ <tr><td><p>&nbsp;</p><p>&nbsp;</p></td></tr>
+<tr bgcolor="#FFFFCC"> 
+    <td colspan="2"> 
+      <p><!-- #BeginLibraryItem "../Library/footer.lbi" --><font face="Verdana, Arial, Helvetica, sans-serif" size="2">&copy; African Studies 
+Institute, University of Georgia.</font><!-- #EndLibraryItem --></p>
+    </td>
+  </tr>
+  </table>
+</BODY></HTML>
+

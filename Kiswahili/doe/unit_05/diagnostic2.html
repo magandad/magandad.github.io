@@ -1,0 +1,390 @@
+
+
+<HTML><HEAD><TITLE>Unit 5 diagnostic test</TITLE></HEAD>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function mailIt(form) {
+
+  var data = document.testForm
+
+  var userInfo = "" 
+
+ var mytext = "" 
+
+ if(data.recipient.value == ""){ 
+
+  alert("You must enter your teacher's address!"); 
+
+   return false;
+
+ }
+
+ else{ 
+
+ userInfo += "To: " + data.recipient.value + "\n" 
+
+ }
+
+ if (data.emailad.value == ""){ 
+
+alert("You need to enter your email address also!"); 
+
+return false;
+
+}
+
+ else{
+
+userInfo += "From: " + data.emailad.value + "\n" 
+
+}
+
+userInfo += "Subject: " + "Student exercise" + "\n\n" 
+
+userInfo += "Student: " + data.student.value + "\n" 
+
+userInfo += "Page Title:  " + document.title + "\n\n" 
+
+if (data.box1.value != ""){
+
+mytext += "Response for question 1 "  +  "\n\n" + data.box1.value + "\n\n" 
+
+}
+
+if (data.box2.value != ""){
+
+mytext += "Response for question 2 "  +  "\n\n" + data.box2.value + "\n\n" 
+
+}
+
+if (data.box3.value != ""){
+
+mytext += "Response for question 3 "  +  "\n\n" + data.box3.value + "\n\n" 
+
+}
+
+if (data.box4.value != ""){
+
+mytext += "Response for question 4 "  +  "\n\n" + data.box4.value + "\n\n" 
+
+}
+
+form.mailBody.value = "(bs)" + userInfo + mytext + "(es)" 
+
+form.action = "http://ccat.sas.upenn.edu/cgi-bin/tamil/sendkikodata" 
+
+return true
+
+}
+
+function rightString(InString, num)  {
+
+OutString = InString.substring
+
+(InString.length-num,InString.length);
+
+return (OutString);
+
+}
+
+function set(text){
+
+var ret = rightString(text, 3)
+
+if (ret == "gif" || ret == "jpg" ){
+
+text = "<img src='" + text + "'>" 
+
+win = window.open("", "newwin", "height=250,width=400")
+
+win.document.write (text)
+
+win.document.close();
+
+}
+
+else if (ret == "mov"){
+
+location = text
+
+}
+
+else if (ret == "htm"){
+
+location = text
+
+}
+
+else if (ret == "tml"){
+
+location = text
+
+}
+
+else if (ret == "ram"){
+
+location = text
+
+}
+
+else if (ret == ".ra"){
+
+location = text
+
+}
+
+else if (ret == ".au"){
+
+location = text
+
+}
+
+else{
+
+win = window.open("", "newwin", "height=250,width=400")
+
+win.document.write ("<font color=red size=+4>" + text)
+
+win.document.close();
+
+win.creator = self
+
+}
+
+}
+
+</script>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<table border="0" cellpadding="4" cellspacing="0" width="100%">
+
+  <tr> 
+
+    <td><img height=78 src="../media/images/kikoLogo.gif" width=173></td>
+
+    <td> 
+
+      <p align=right><font face="Verdana, Arial, Helvetica, sans-serif" 
+
+      size=2><a 
+
+      href="../../index.html">Home<br>
+
+        </a></font><font 
+
+      face="Verdana, Arial, Helvetica, sans-serif" size=2><a 
+
+      href="../../overview.html">Overview<br>
+
+        </a></font><font 
+
+      face="Verdana, Arial, Helvetica, sans-serif" size=2><a 
+
+      href="../../techHelp.html">Technical Help</a></font></p>
+
+    </td>
+
+  </tr>
+
+  <tr> 
+
+    <td bgcolor=#ccccff colspan=2><font 
+
+      face="Verdana, Arial, Helvetica, sans-serif" size=2><a href="../unitSelect.html">Select Unit </a>&gt; <a href="index.html">Unit 5: <i>Kununua na Kuuza. Buying and Selling </i></a>&gt; Diagnostic test</font></td>
+
+  </tr>
+
+</table>
+
+</center></font></td></tr></table></center>
+
+<center><table border=0><tr>
+
+      <td><font color="black" size="+1" face="Verdana, Arial, Helvetica, sans-serif size=2">Jibu maswali yote</font></td>
+
+    </tr></table></center>
+
+<center>
+
+  <table border=0 width="95%" bordercolor="#FFFFFF" bgcolor="#FFFFFF">
+
+    <tr>
+
+      <td bgcolor='#FFFFFF'> 
+
+        <FORM NAME = "testForm">
+
+<table border=0> <tr>
+
+              <td height="114"><font face="Verdana, Arial, Helvetica, sans-serif" color="black" size="2">1. 
+
+                Uko dukani. Unataka kununua mahitaji yako ya shule. Unahitaji 
+
+                madaftari, penseli, kalamu, na vifutio. Bei ya vitu hivi ni: daftari 
+
+                moja – shilingi 350; penseli moja – shilingi 55; kalamu moja – 
+
+                shilingi 130. Unataka kununua madaftari matatu, penseli tano, 
+
+                kalamu mbili, na vifutio vine. Andika mazungumzo baina yako na 
+
+                mwuzaji. (You are at a store. You want to buy your school supplies. 
+
+                You need notebooks, pencils, pens, and erasers. The price of these 
+
+                things is: one notebook – 350 shillings; one pencil – 55 shillings; 
+
+                one pen – 130 shillings. You need 3 notebooks, 5 pencils, 2 pens, 
+
+                and 4 erasors. Write a dialogue between you and the seller.)</font></td>
+
+            </tr></table>
+
+<br>
+
+          <textarea name='box1' rows=10 cols=70 wrap=virtual value='Enter here'></textarea>
+
+          <br>
+
+<table border=0> <tr>
+
+              <td><font color="black" size="2" face="Verdana, Arial, Helvetica, sans-serif">2. 
+
+                Uko sokonni. Unataka kununua maembe, mchicha, na samaki. Bei ya 
+
+                vitu hivi ni: embe moja – shilingi 100; kifungu kimoja cha mchicha 
+
+                – shilingi 500; kilo moja ya samaki– shilingi 1000. Unataka kununua 
+
+                maembe matano, vifungu vnine vya mchicha, na kilo tatu za samaki.. 
+
+                Andika mazungumzo baina yako na mwuzaji. (You are at the market. 
+
+                You want to buy mangoes, spinach, and fish. The price of these 
+
+                things is: one mango – 100 shillings; 1 bunch of spinach – 500 
+
+                shillings; one kilo of fish – 1000 shillings. You want to buy 
+
+                5 mangoes, 4 bunches of spinach, and 3 kilos of fish. Write a 
+
+                dialogue between you and the seller.)</font></td>
+
+            </tr></table>
+
+<br>
+
+          <textarea name='box2' rows=10 cols=70 wrap=virtual value='Enter here'></textarea>
+
+          <br>
+
+<table border=0> <tr>
+
+              <td><font color="black" size="2" face="Verdana, Arial, Helvetica, sans-serif">3. 
+
+                Uko katika duka la nguo. Unataka kununua nguo mbali mbali. Uliza 
+
+                bei za nguo hizi na jaribu kupatana bei. Chagua na nunua nguo tatu tofauti. 
+
+                Andika mazungumzo na mwuzaji. (You are at a cloth store. You want 
+
+                to buy different kinds of clothes. Ask for prices and try to bargain. 
+
+                Choose and buy three different kinds of clothes. Write your dialogue 
+
+                with the seller.)</font></td>
+
+            </tr></table>
+
+<br>
+
+          <textarea name='box3' rows=10 cols=70 wrap=virtual value='Enter here'></textarea>
+
+          <br>
+
+<table border=0> <tr>
+
+              <td><font color="black" size="2" face="Verdana, Arial, Helvetica, sans-serif">4. 
+
+                Uko posta katika mji wa Dar es Salaam, Tanzania. Unataka kutuma 
+
+                Marekani kifurushi kimoja na kadi za posta mbili. Unataka kujua 
+
+                bei ya kutuma kifurushi na unataka kununua stempu mbili za kadi. 
+
+                Andika mazungumzo baina yako na mfanya kazi wa posta. (You are 
+
+                at the post office in Dar es Salaam, Tanzania. You want to send 
+
+                to the US a parcel and two post cards. You want to know how much 
+
+                it will cost to send the parcel and you want to buy two stamps 
+
+                for the post cards. Write a dialogue between you and the post 
+
+                office clerk). </font></td>
+
+            </tr></table>
+
+<br>
+
+          <textarea name='box4' rows=10 cols=70 wrap=virtual value='Enter here'></textarea>
+
+          <br>
+
+</td></tr></table border=0></center>
+
+Instructor's Email: <input size='30' NAME='recipient'><br>
+
+Your Name: <input size='30' NAME='student'><br>
+
+Your email: <input size='30' NAME='emailad'><br>
+
+</form>
+
+<table border=0>
+
+<form name = "mailForm" 
+
+Action = "" 
+
+METHOD = "post" 
+
+ENCTYPE = "multipart/form-data" 
+
+onSubmit="return mailIt(this)">
+
+<INPUT TYPE="hidden" NAME="mailBody" VALUE="">
+
+<tr>
+
+<TD COLSPAN=2 ALIGN=center>
+
+<INPUT TYPE="submit" VALUE="Send it.">
+
+</TR>
+
+</FORM>
+
+</table>
+
+<table border=0 width="100%">
+
+<tr><td><p>&nbsp;</p></td></tr>
+
+<tr bgcolor="#FFFFCC"> 
+
+    <td colspan="2"> 
+
+      <p><!-- #BeginLibraryItem "../Library/footer.lbi" --><font face="Verdana, Arial, Helvetica, sans-serif" size="2">&copy; African Studies 
+
+Institute, University of Georgia.</font><!-- #EndLibraryItem --></p>
+
+    </td>
+
+  </tr></table>
+
+</BODY></HTML>
+

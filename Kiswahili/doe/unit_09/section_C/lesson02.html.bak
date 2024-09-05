@@ -1,0 +1,67 @@
+
+
+
+<html>
+<head>
+<title>KIKO: Lesson Title, Video Selection</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<SCRIPT SRC="../../scripts/glossary.js" LANGUAGE="Javascript"></SCRIPT>
+<script language="JavaScript">
+<!--
+
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+
+//-->
+</script>
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<DIV ID="glossaryDefinition" STYLE="position:absolute; z-index:0; visibility: hidden; background-color: #CCCCFF; layer-background-color: #CCCCFF; border: 1px none #000000"></DIV>
+<table border="0" cellpadding="4" cellspacing="0" width="100%">
+  <tr> 
+    <td><img src="../../media/images/kikoLogo.gif" width="173" height="78"></td>
+    <td> 
+      <p align="right"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><a href="../../index.html">Home<br>
+        </a></font><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><a href="../../overview.html">Overview<br>
+        </a></font><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><a href="../../techHelp.html">Technical 
+        Help</a></font></p>
+    </td>
+  </tr>
+  <tr> 
+    <td colspan="2" bgcolor="#CCCCFF"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><A HREF="../../unitSelect.html">Select 
+      Unit </A> &gt; <A HREF="../index.html">Unit 9: <I>Usafiri wa majini</I></A> &gt; 
+      <b>Lesson 6: </b></font></td>
+  </tr>
+  <tr> 
+    <td colspan="2"> 
+      <table width="100%" border="0" cellspacing="4">
+        <tr> 
+          <td valign="top"> 
+            <p align="center"><embed src="../../media/av/unit09/Movies/u11l01k.mov" width=320 height=256 autoplay=false controller=true loop=false pluginspage="http://www.apple.com/quicktime/">
+              </embed></p>
+            <p align="center"><a href="#" onClick="MM_openBrWindow('../../kikoculturey2.html#unit9','culturalNote','scrollbars=yes,resizable=yes,width=400,height=300')"><img src="../../media/images/culturalNote.gif" width="106" height="28" border="0"></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" onClick="MM_openBrWindow('../../kikogrammary2.html#unit9','grammarNote','scrollbars=yes,resizable=yes,width=400,height=300')"><img src="../../media/images/grammarNote.gif" width="106" height="28" border="0"></a></p>
+          </td>
+          <td valign="top"> 
+            <P><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Kwenda visiwa vya Gede na Unguja</p><p>
+</p><p>
+Mji wa Zanzibar ni mji mdogo sana.  <A HREF="#" onMouseOver="showGloss('it is not necessary');" onMouseout="hideGloss();">Si lazima</A> kuwa na motokaa.  Watu wengi hutembea kwenda ofisini, kazini, sokoni, na madukani.  <A HREF="#" onMouseOver="showGloss('few people');" onMouseout="hideGloss();">Wachache</A> <A HREF="#" onMouseOver="showGloss('they use');" onMouseout="hideGloss();">wanatumia</A> baisikeli.</p><p>
+</p><p>
+</p><p>
+Unaweza kwenda Unguja kwa ndege au meli ndogo.  Wananchi wa Unguja husema boti <A HREF="#" onMouseOver="showGloss('instead of');" onMouseout="hideGloss();">badala ya</A> meli.  Kwa ndege, kutoka Tanzania bara ni dakika ishirini hivi.  Kwa boti ni saa moja na nusu.  </p><p>
+</p><p>
+</p><p>
+Sasa tutaondoka Malindi na kutembelea mji wa Gede.  <A HREF="#" onMouseOver="showGloss('in the past');" onMouseout="hideGloss();">Zamani</A> Gede ndimo mlimokuwa <A HREF="#" onMouseOver="showGloss('head quarters');" onMouseout="hideGloss();">makao makuu</A> ya sehemu hizi.  Sasa <A HREF="#" onMouseOver="showGloss('activities');" onMouseout="hideGloss();">shughuli</A> zote za serikali hufanyika mjini Malindi.  Wasafiri wanaokwenda Gede hutumia <A HREF="#" onMouseOver="showGloss('dhows');" onMouseout="hideGloss();">dau</A> zenye <A HREF="#" onMouseOver="showGloss('sails');" onMouseout="hideGloss();">tanga</A> <A HREF="#" onMouseOver="showGloss('which are pushed');" onMouseout="hideGloss();">zinazosukumwa</A> na <A HREF="#" onMouseOver="showGloss('wind');" onMouseout="hideGloss();">upepo</A>.  Mji wa Gede ni mji <A HREF="#" onMouseOver="showGloss('famous');" onMouseout="hideGloss();">maarufu</A> kwa historia yake <A HREF="#" onMouseOver="showGloss('which was protected');" onMouseout="hideGloss();">iliyohifadhiwa</A> katika magofu ya nyumba zake za zamani, na pia jumba la <A HREF="#" onMouseOver="showGloss('museum');" onMouseout="hideGloss();">makumbusho</A> ambalo hutunzwa sana na serikali ya Kenya.  <A HREF="#" onMouseOver="showGloss('let us join');" onMouseout="hideGloss();">Tujiunge</A> na wasafiri hawa kwenda Gede.
+          </td>
+        </tr>
+      </table>
+      <p><!-- #BeginLibraryItem "Library/footer.lbi" --><font face="Verdana, Arial, Helvetica, sans-serif" size="2">&copy; African Studies 
+Institute, University of Georgia</font><!-- #EndLibraryItem --></p>
+    </td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+
+</body>
+</html>

@@ -1,0 +1,164 @@
+<html>
+<head>
+<title>KIKO: Unit 1: Sura ya kwanza</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+<script language="JavaScript">
+<!--
+function MM_findObj(n, d) { //v3.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document); return x;
+}
+
+function MM_dragLayer(objName,x,hL,hT,hW,hH,toFront,dropBack,cU,cD,cL,cR,targL,targT,tol,dropJS,et,dragJS) { //v3.0
+  //Copyright 1998 Macromedia, Inc. All rights reserved.
+  var i,j,aLayer,retVal,curDrag=null,NS=(navigator.appName=='Netscape'), curLeft, curTop;
+  if (!document.all && !document.layers) return false;
+  retVal = true; if(!NS && event) event.returnValue = true;
+  if (MM_dragLayer.arguments.length > 1) {
+    curDrag = MM_findObj(objName); if (!curDrag) return false;
+    if (!document.allLayers) { document.allLayers = new Array();
+      with (document) if (NS) { for (i=0; i<layers.length; i++) allLayers[i]=layers[i];
+        for (i=0; i<allLayers.length; i++) if (allLayers[i].document && allLayers[i].document.layers)
+          with (allLayers[i].document) for (j=0; j<layers.length; j++) allLayers[allLayers.length]=layers[j];
+      } else for (i=0;i<all.length;i++) if (all[i].style&&all[i].style.position) allLayers[allLayers.length]=all[i];}
+    curDrag.MM_dragOk=true; curDrag.MM_targL=targL; curDrag.MM_targT=targT;
+    curDrag.MM_tol=Math.pow(tol,2); curDrag.MM_hLeft=hL; curDrag.MM_hTop=hT;
+    curDrag.MM_hWidth=hW; curDrag.MM_hHeight=hH; curDrag.MM_toFront=toFront;
+    curDrag.MM_dropBack=dropBack; curDrag.MM_dropJS=dropJS;
+    curDrag.MM_everyTime=et; curDrag.MM_dragJS=dragJS;
+    curDrag.MM_oldZ = (NS)?curDrag.zIndex:curDrag.style.zIndex;
+    curLeft= (NS)?curDrag.left:curDrag.style.pixelLeft; curDrag.MM_startL = curLeft;
+    curTop = (NS)?curDrag.top:curDrag.style.pixelTop; curDrag.MM_startT = curTop;
+    curDrag.MM_bL=(cL<0)?null:curLeft-cL; curDrag.MM_bT=(cU<0)?null:curTop -cU;
+    curDrag.MM_bR=(cR<0)?null:curLeft+cR; curDrag.MM_bB=(cD<0)?null:curTop +cD;
+    curDrag.MM_LEFTRIGHT=0; curDrag.MM_UPDOWN=0; curDrag.MM_SNAPPED=false; //use in your JS!
+    document.onmousedown = MM_dragLayer; document.onmouseup = MM_dragLayer;
+    if (NS) document.captureEvents(Event.MOUSEDOWN|Event.MOUSEUP);
+  } else {
+    var theEvent = ((NS)?objName.type:event.type);
+    if (theEvent == 'mousedown') {
+      var mouseX = (NS)?objName.pageX : event.clientX + document.body.scrollLeft;
+      var mouseY = (NS)?objName.pageY : event.clientY + document.body.scrollTop;
+      var maxDragZ=null; document.MM_maxZ = 0;
+      for (i=0; i<document.allLayers.length; i++) { aLayer = document.allLayers[i];
+        var aLayerZ = (NS)?aLayer.zIndex:aLayer.style.zIndex;
+        if (aLayerZ > document.MM_maxZ) document.MM_maxZ = aLayerZ;
+        var isVisible = (((NS)?aLayer.visibility:aLayer.style.visibility).indexOf('hid') == -1);
+        if (aLayer.MM_dragOk != null && isVisible) with (aLayer) {
+          var parentL=0; var parentT=0;
+          if (!NS) { parentLayer = aLayer.parentElement;
+            while (parentLayer != null && parentLayer.style.position) {
+              parentL += parentLayer.offsetLeft; parentT += parentLayer.offsetTop;
+              parentLayer = parentLayer.parentElement; } }
+          var tmpX=mouseX-(((NS)?pageX:style.pixelLeft+parentL)+MM_hLeft);
+          var tmpY=mouseY-(((NS)?pageY:style.pixelTop +parentT)+MM_hTop);
+          var tmpW = MM_hWidth;  if (tmpW <= 0) tmpW += ((NS)?clip.width :offsetWidth);
+          var tmpH = MM_hHeight; if (tmpH <= 0) tmpH += ((NS)?clip.height:offsetHeight);
+          if ((0 <= tmpX && tmpX < tmpW && 0 <= tmpY && tmpY < tmpH) && (maxDragZ == null
+              || maxDragZ <= aLayerZ)) { curDrag = aLayer; maxDragZ = aLayerZ; } } }
+      if (curDrag) {
+        document.onmousemove = MM_dragLayer; if (NS) document.captureEvents(Event.MOUSEMOVE);
+        curLeft = (NS)?curDrag.left:curDrag.style.pixelLeft;
+        curTop = (NS)?curDrag.top:curDrag.style.pixelTop;
+        MM_oldX = mouseX - curLeft; MM_oldY = mouseY - curTop;
+        document.MM_curDrag = curDrag;  curDrag.MM_SNAPPED=false;
+        if(curDrag.MM_toFront) {
+          eval('curDrag.'+((NS)?'':'style.')+'zIndex=document.MM_maxZ+1
+          if (!curDrag.MM_dropBack) document.MM_maxZ++; }
+        retVal = false; if(!NS) event.returnValue = false;
+    } } else if (theEvent == 'mousemove') {
+      if (document.MM_curDrag) with (document.MM_curDrag) {
+        var mouseX = (NS)?objName.pageX : event.clientX + document.body.scrollLeft;
+        var mouseY = (NS)?objName.pageY : event.clientY + document.body.scrollTop;
+        newLeft = mouseX-MM_oldX; newTop  = mouseY-MM_oldY;
+        if (MM_bL!=null) newLeft = Math.max(newLeft,MM_bL);
+        if (MM_bR!=null) newLeft = Math.min(newLeft,MM_bR);
+        if (MM_bT!=null) newTop  = Math.max(newTop ,MM_bT);
+        if (MM_bB!=null) newTop  = Math.min(newTop ,MM_bB);
+        MM_LEFTRIGHT = newLeft-MM_startL; MM_UPDOWN = newTop-MM_startT;
+        if (NS) {left = newLeft; top = newTop;}
+        else {style.pixelLeft = newLeft; style.pixelTop = newTop;}
+        if (MM_dragJS) eval(MM_dragJS);
+        retVal = false; if(!NS) event.returnValue = false;
+    } } else if (theEvent == 'mouseup') {
+      document.onmousemove = null;
+      if (NS) document.releaseEvents(Event.MOUSEMOVE);
+      if (NS) document.captureEvents(Event.MOUSEDOWN); //for mac NS
+      if (document.MM_curDrag) with (document.MM_curDrag) {
+        if (typeof MM_targL =='number' && typeof MM_targT == 'number' &&
+            (Math.pow(MM_targL-((NS)?left:style.pixelLeft),2)+
+             Math.pow(MM_targT-((NS)?top:style.pixelTop),2))<=MM_tol) {
+          if (NS) {left = MM_targL; top = MM_targT;}
+          else {style.pixelLeft = MM_targL; style.pixelTop = MM_targT;}
+          MM_SNAPPED = true; MM_LEFTRIGHT = MM_startL-MM_targL; MM_UPDOWN = MM_startT-MM_targT; }
+        if (MM_everyTime || MM_SNAPPED) eval(MM_dropJS);
+        if(MM_dropBack) {if (NS) zIndex = MM_oldZ; else style.zIndex = MM_oldZ;}
+        retVal = false; if(!NS) event.returnValue = false; }
+      document.MM_curDrag = null;
+    }
+    if (NS) document.routeEvent(objName);
+  } return retVal;
+}
+
+//-->
+</script>
+
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" >
+<table border="0" cellpadding="4" cellspacing="0" width="100%">
+  <tr> 
+    <td><img src="../media/images/kikoLogo.gif" width="173" height="78"></td>
+    <td> 
+      <p align="right"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><a href="../index.html">Home<br>
+        </a></font><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><a href="../overview.html">Overview<br>
+        </a></font><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><a href="techHelp.html">Technical 
+        Help</a></font></p>
+    </td>
+  </tr>
+ <tr> 
+    <td colspan="2" bgcolor="#CCCCFF"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"> 
+      <a href="../unitSelect.html">Select a Unit</a> &gt; <b><a href="index.html">Unit 
+      1: Sura ya kwanza</a> Matching game (supplementary)</b></font></td>
+  </tr>
+</table>
+<br>
+<div id="Layer1" style="position:absolute; width:152px; height:56px; z-index:1; left: 17px; top: 368px; background-color: #FFCCCC; layer-background-color: #FFCCCC; border: 1px none #000000" onMouseDown="MM_dragLayer('Layer1','',0,0,0,0,true,false,-1,-1,-1,-1,213,176,30,'alert(\'Sawa\')',false,'')"><font size="2" face="Verdana, Arial, Helvetica, sans-serif" color="#0000FF"><b>Huyu 
+  ni dada yangu.</b></font></div>
+<div id="Layer2" style="position:absolute; width:153px; height:82px; z-index:2; left: 213px; top: 176px; background-color: #CCCCFF; layer-background-color: #CCCCFF; border: 1px none #000000"><img src="../media/images/u1s3l2b.jpg" width="152" height="126"></div>
+<div id="Layer3" style="position:absolute; width:115px; height:122px; z-index:3; left: 382px; top: 177px; background-color: #FFCCCC; layer-background-color: #FFCCCC; border: 1px none #000000"><img src="../media/images/u1s1l1a.jpg" width="152" height="126"></div>
+<div id="Layer5" style="position:absolute; width:149px; height:122px; z-index:4; left: 386px; top: 309px; background-color: #FFCCCC; layer-background-color: #FFCCCC; border: 1px none #000000"><img src="../media/images/u1s3l2.jpg" width="152" height="126"></div>
+<div id="Layer6" style="position:absolute; width:154px; height:51px; z-index:6; left: 16px; top: 255px; background-color: #FFCCCC; layer-background-color: #FFCCCC; border: 1px none #000000" onMouseDown="MM_dragLayer('Layer6','',0,0,0,0,true,false,-1,-1,-1,-1,382,177,30,'alert(\'Sawa\')',false,'')"><b><font color="#0000FF" face="Verdana, Arial, Helvetica, sans-serif" size="2">Habari 
+  gani. Baba Hadija?</font></b></div>
+<div id="Layer7" style="position:absolute; width:154px; height:45px; z-index:7; left: 15px; top: 314px; background-color: #FFCCCC; layer-background-color: #FFCCCC; border: 1px none #000000" onMouseDown="MM_dragLayer('Layer7','',0,0,0,0,true,false,-1,-1,-1,-1,214,308,50,'alert(\'Sawa\')',false,'')"><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#0000FF"><b>Huyu 
+  ni kaka yangu<br>
+  Jina lake ni Mustafa.</b></font></div>
+<div id="Layer4" style="position:absolute; width:153px; height:133px; z-index:5; left: 214px; top: 308px"><img src="../media/images/u1s3l2a.jpg" width="152" height="126"></div>
+<div id="Layer8" style="position:absolute; width:156px; height:48px; z-index:8; left: 16px; top: 195px; background-color: #FFCCCC; layer-background-color: #FFCCCC; border: 1px none #000000" onMouseDown="MM_dragLayer('Layer8','',0,0,0,0,true,false,-1,-1,-1,-1,386,309,50,'alert(\'Sawa\')',false,'')"> 
+  <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#0000FF"><b>Jina 
+    langu ni Hadija.<br>
+    </b></font><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#0000FF"><b> 
+    Huyu ni kaka yangu.<br>
+    </b></font></p>
+  </div>
+<font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>Drag the phrase 
+and match with the right picture. You will get the response &quot;Sawa&quot; if 
+you get a right match.</b></font> <font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>(Works 
+only in Internet Explorer 4 or above)</b></font> 
+<div id="Layer9" style="position:absolute; width:736px; height:28px; z-index:9; left: 21px; top: 463px"> 
+  <table border=0 width="100%">
+       <tr><td><p>&nbsp;</p><p>&nbsp;</p></td></tr>
+<tr bgcolor="#FFFFCC"> 
+    <td colspan="2"> 
+      <p><!-- #BeginLibraryItem "../Library/footer.lbi" --><font face="Verdana, Arial, Helvetica, sans-serif" size="2">&copy; African Studies 
+Institute, University of Georgia.</font><!-- #EndLibraryItem --></p>
+    </td>
+  </tr>
+  </table>
+</div> 
+</body>
+</html>

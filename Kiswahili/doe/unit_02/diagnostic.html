@@ -1,0 +1,357 @@
+<html>
+<head>
+<title>KIKO: Lesson Title, Video Selection</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<SCRIPT LANGUAGE="JavaScript">
+
+function mailIt(form) {
+  var data = document.testForm
+  var userInfo = ""
+  var mytext = ""
+
+ if(data.recipient.value == ""){
+    alert("You must enter your teacher's address!");
+    return false;
+  } 
+  else{
+  userInfo += "To: " + data.recipient.value + "\n"
+  } 
+ if (data.emailad.value == ""){
+       alert("You need to enter your email address also!");
+       return false;
+ }
+  else{
+  userInfo += "From: " + data.emailad.value + "\n"
+ } 
+  userInfo += "Subject: " + "Student exercise" + "\n\n"
+  userInfo += "Student: " + data.student.value + "\n"
+  userInfo += "Page Title:  " + document.title + "\n\n"
+
+ 
+      if (data.s1.value != "") { 
+       	mytext += "Question 1: kumi\n\n"
+	mytext += "Answer:\n"  + data.s1.value + "\n\n"
+      }
+      if (data.s2.value != "") {
+       	mytext += "Question 2: ishirini \n\n"
+	mytext += "Answer:\n"  + data.s2.value + "\n\n"
+      }
+      if (data.s3.value != ""){
+	mytext += "Question 3: nane\n\n"
+        mytext += "Answer:\n" + data.s3.value + "\n\n"
+       }
+      if (data.s4.value != ""){ 
+	mytext += "Question 4: kumi na mbili\n\n"
+        mytext += "Sentence 4:\n" + data.s4.value + "\n\n"
+      }
+      if (data.s5.value != ""){ 
+       	mytext += "Question 5: tisa\n\n"
+	mytext += "Answer:\n" + data.s5.value + "\n\n"
+      }
+      if (data.s6.value != "") { 
+      	mytext += "Question 6: kumi ne nne\n\n"
+	mytext += "Answer:\n" + data.s6.value + "\n\n"
+      } 
+      if (data.s7.value != ""){
+      	mytext += "Question 7: tano\n\n"
+	mytext += "Answer:\n" + data.s7.value + "\n\n"
+      }
+   if (data.s8.value != ""){
+      	mytext += "Question 8: saba\n\n"
+	mytext += "Answer:\n" + data.s8.value + "\n\n"
+      }
+   if (data.s9.value != ""){
+      	mytext += "Question 9: mia moja\n\n"
+	mytext += "Answer:\n" + data.s9.value + "\n\n"
+      }
+   if (data.s10.value != ""){
+      	mytext += "Question 10: ishwini na tisa\n\n"
+	mytext += "Answer:\n" + data.s10.value + "\n\n"
+      }
+
+   if (data.s11.value != ""){
+      	mytext += "Question 11: Monday\n\n"
+	mytext += "Answer:\n" + data.s11.value + "\n\n"
+      }
+	     if (data.s12.value != ""){
+      	mytext += "Question 12: Tuesday\n\n"
+	mytext += "Answer:\n" + data.s12.value + "\n\n"
+      }
+	     if (data.s13.value != ""){
+      	mytext += "Question 13: Wednesday\n\n"
+	mytext += "Answer:\n" + data.s13.value + "\n\n"
+      }
+	     if (data.s14.value != ""){
+      	mytext += "Question 14: Thursday\n\n"
+	mytext += "Answer:\n" + data.s14.value + "\n\n"
+      }
+	    if (data.s15.value != ""){
+      	mytext += "Question 15: Friday\n\n"
+	mytext += "Answer:\n" + data.s15.value + "\n\n"
+      }
+	    if (data.s16.value != ""){
+      	mytext += "Question 16: Saturday\n\n"
+	mytext += "Answer:\n" + data.s16.value + "\n\n"
+      }
+	    if (data.s17.value != ""){
+      	mytext += "Question 17: Sunday\n\n"
+	mytext += "Answer:\n" + data.s17.value + "\n\n"
+      }
+	    if (data.s18.value != ""){
+      	mytext += "Question 18: Andika insha fupi kuhusu wewe:\n\n"
+	mytext += "Answer:\n" + data.s18.value + "\n\n"
+      }
+	  
+	  
+    form.mailBody.value = "(bs)" + userInfo + mytext + "(es)"
+     form.action = "http://ccat.sas.upenn.edu/cgi-bin/tamil/sendkiko"
+
+
+  return true
+ 
+}
+
+
+</SCRIPT>
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table border="0" cellpadding="4" cellspacing="0" width="100%">
+  <tr> 
+    <td><img src="../media/images/kikoLogo.gif" width="173" height="78"></td>
+    <td> 
+      <p align="right"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><a href="../index.html">Home<br>
+        </a></font><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><a href="../overview.html">Overview<br>
+        </a></font><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><a href="../techHelp.html">Technical 
+        Help</a></font></p>
+    </td>
+  </tr>
+  <tr> 
+    <td colspan="2" bgcolor="#CCCCFF"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><A HREF="../unitSelect.html">Select 
+      Unit </A> &gt; <A HREF="index.html">Unit 2: Kujua Nambari</A> &gt; <b>Mtihani 
+      wa sura ya pili (supplementary):</b></font></td>
+  </tr>
+</table>
+<FONT SIZE=+2><font color="#0000FF" face="Verdana, Arial, Helvetica, sans-serif"><font size="3"><b><font color="#000000">Maswali 
+</font></b></font><FONT SIZE=+4><BR>
+</FONT></font></font>
+<ul>
+  <table width="737" height="1159">
+    <TR> 
+      <TD width="456"> <font size=+2><font color="#008000" face="Verdana, Arial, Helvetica, sans-serif"><font size="3"><b><font color="#000000">1. 
+        Jaza mapengo kwa kutumia nambari sahahi.</font></b></font></font></font> 
+        <br><FORM NAME="testForm">
+        <font color="#000000" face="Verdana, Arial, Helvetica, sans-serif" size="3">1. 
+        kumi<BR>
+        <input type="text" name="s1" size="20" value="">
+        </font></form></TD>
+      <TD width="269"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">a. 
+        100 </font></TD>
+    </TR>
+    <TR> 
+      <TD width="456"><font color="#000000" face="Verdana, Arial, Helvetica, sans-serif" size="3">2. 
+        ishirini<BR>
+        <input type="text" name="s2" size="20" value="">
+        </font></TD>
+      <TD width="269"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">b. 
+        8 </font> </TD>
+    </TR>
+    <TR> 
+      <TD width="456"><font color="#000000" face="Verdana, Arial, Helvetica, sans-serif" size="3">3. 
+        nane <BR>
+        <input type="text" name="s3" size="20" value="">
+        </font></TD>
+      <TD width="269"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">c. 
+        14 </font></TD>
+    </TR>
+    <TR> 
+      <TD width="456"><font color="#000000" face="Verdana, Arial, Helvetica, sans-serif" size="3">4. 
+        kumi na mbili<BR>
+        <input type="text" name="s4" size="20" value="">
+        </font></TD>
+      <TD width="269"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">d. 
+        7</font></TD>
+    </TR>
+    <TR> 
+      <TD width="456"><font color="#000000" face="Verdana, Arial, Helvetica, sans-serif" size="3">5. 
+        tisa <BR>
+        <input type="text" name="s5" size="20" value="">
+        </font></TD>
+      <TD width="269"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">e. 
+        9</font></TD>
+    </TR>
+    <TR> 
+      <TD width="456"><font color="#000000" face="Verdana, Arial, Helvetica, sans-serif" size="3">6. 
+        kumi ne nne<BR>
+        <input type="text" name="s6" size="20" value="">
+        </font></TD>
+      <TD width="269"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">f. 
+        10</font></TD>
+    </TR>
+    <TR> 
+      <TD width="456"><font color="#000000" face="Verdana, Arial, Helvetica, sans-serif" size="3">7. 
+        tano <br>
+        <input type="text" name="s7" size="20" value="">
+        </font></TD>
+      <TD width="269"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">g. 
+        29</font></TD>
+    </TR>
+    <TR> 
+      <TD width="456"><font color="#000000" face="Verdana, Arial, Helvetica, sans-serif" size="3">8. 
+        saba <br>
+        <input type="text" name="s8" size="20" value="">
+        </font></TD>
+      <TD width="269"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">h. 
+        12</font></TD>
+    </TR>
+    <TR> 
+      <TD width="456"><font color="#000000" face="Verdana, Arial, Helvetica, sans-serif" size="3">9. 
+        mia moja<br>
+        <input type="text" name="s9" size="20" value="">
+        </font></TD>
+      <TD width="269"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">i. 
+        20</font></TD>
+    </TR>
+    <TR> 
+      <TD width="456"><font color="#000000" face="Verdana, Arial, Helvetica, sans-serif" size="3">10. 
+        ishiwini na tisa<br>
+        <input type="text" name="s10" size="20" value="">
+        </font></TD>
+      <TD width="269"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">j. 
+        5</font></TD>
+    </TR>
+    <tr> 
+      <td width="456"><font color="#000000" face="Verdana, Arial, Helvetica, sans-serif" size="3"><br>
+        <b>2. Jaze mapego kwi katumi siku ya wiki sahihi</b><br>
+        <br>
+        1. Monday<br>
+        <input type="text" name="s11" size="20" value="">
+        </font></td>
+      <td width="269"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">a. 
+        Jumapili </font></td>
+    </tr>
+    <tr> 
+      <td width="456"><font face="Verdana, Arial, Helvetica, sans-serif" size="3" color="#000000">2. 
+        Tuesday <br>
+        <input type="text" name="s12" size="20" value="">
+        </font></td>
+      <td width="269"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">b. 
+        Jumaa</font></td>
+    </tr>
+    <tr> 
+      <td width="456"><font face="Verdana, Arial, Helvetica, sans-serif" size="3" color="#000000">3. 
+        Wednesday </font><font face="Verdana, Arial, Helvetica, sans-serif" size="3" color="#000000"><br>
+        <input type="text" name="s13" size="20" value="">
+        </font></td>
+      <td width="269"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">c. 
+        Jumatatu </font></td>
+    </tr>
+    <tr> 
+      <td width="456"><font face="Verdana, Arial, Helvetica, sans-serif" size="3" color="#000000">4. 
+        Thursday </font><font face="Verdana, Arial, Helvetica, sans-serif" size="3" color="#000000"><br>
+        <input type="text" name="s14" size="20" value="">
+        </font></td>
+      <td width="269"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">d. 
+        Jumamosi</font></td>
+    </tr>
+    <tr> 
+      <td width="456"><font face="Verdana, Arial, Helvetica, sans-serif" size="3" color="#000000">5. 
+        Friday <br>
+        <input type="text" name="s15" size="20" value="">
+        </font></td>
+      <td width="269"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">e. 
+        Jumanne </font></td>
+    </tr>
+    <tr> 
+      <td width="456"><font face="Verdana, Arial, Helvetica, sans-serif" size="3" color="#000000">6. 
+        Saturday <br>
+        <input type="text" name="s16" size="20" value="">
+        </font></td>
+      <td width="269"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">f. 
+        Alhamisi </font></td>
+    </tr>
+    <tr> 
+      <td width="456"><font face="Verdana, Arial, Helvetica, sans-serif" size="3" color="#000000">7. 
+        Sunday </font><font face="Verdana, Arial, Helvetica, sans-serif" size="3" color="#000000"><br>
+        <input type="text" name="s17" size="20" value="">
+        </font></td>
+      <td width="269"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">g. 
+        Jumamoi </font></td>
+    </tr>
+    <TR> 
+      <TD width="456"> 
+        <p><font color="#000000" face="Verdana, Arial, Helvetica, sans-serif" size="3"><br>
+          3</font><font color="#000000" face="Verdana, Arial, Helvetica, sans-serif" size="3">. 
+          Andika insha fupi kuhusu wewe (write a short essay about you and your 
+          family. In your essay talk about: where you stay, what is your address, 
+          your phone number, when were you born, when were your sibilings born, 
+          what school are you attending, where will you go for summer etc.<BR>
+          <TEXTAREA NAME="s18" COLS=45 ROWS=8 WRAP=virtual></TEXTAREA>
+          </font></p>
+      </TD>
+      <TD rowspan="6" width="269">&nbsp;</TD>
+    </TR>
+    <tr> 
+      <td width="456"> <font face="Verdana, Arial, Helvetica, sans-serif" size="3"> 
+        <INPUT TYPE="reset" NAME="Clear" VALUE="clear">
+        </font></td>
+    </tr>
+    <TR> 
+      <TH ALIGN=left width="456"><font face="Verdana, Arial, Helvetica, sans-serif" size="3">Enter 
+        your instructor's email: 
+        <INPUT NAME="recipient"
+SIZE=25 VALUE="">
+        </font></TH>
+    </TR>
+    <TR> 
+      <TH ALIGN=right width="456"> 
+        <div align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="3">Your 
+          name: 
+          <INPUT NAME="student" SIZE=25>
+          </font></div>
+      </TH>
+    </TR>
+    <TR> 
+      <TH ALIGN=right width="456"> 
+        <div align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="3">Your 
+          email: 
+          <INPUT NAME="emailad" SIZE=25>
+          </font></div>
+      </TH>
+    </TR>
+    <tr> 
+      <td width="456">
+  </table>
+</ul>
+
+<ul>
+  
+    <table>
+      <font face="Verdana, Arial, Helvetica, sans-serif">
+      </font> 
+      <FORM
+  NAME="mailForm"
+  ACTION=""
+  METHOD="post"
+  ENCTYPE="multipart/form-data"
+  onSubmit="return mailIt(this)">
+        <INPUT TYPE="hidden" NAME="mailBody" VALUE="">
+        <TR> 
+          <TD COLSPAN=2 ALIGN=center> 
+            <INPUT TYPE="submit" VALUE="Send it.">
+          </TD>
+        </TR>
+      </form>
+    </table>
+</ul>
+<br>
+<table border=0 width="100%">
+ 
+<tr bgcolor="#FFFFCC"> 
+    <td colspan="2"> 
+      <p><!-- #BeginLibraryItem "../Library/footer.lbi" --><font face="Verdana, Arial, Helvetica, sans-serif" size="2">&copy; African Studies 
+Institute, University of Georgia.</font><!-- #EndLibraryItem --></p>
+    </td>
+  </tr></table>
+</BODY>
+</HTML>

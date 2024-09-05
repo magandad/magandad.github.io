@@ -1,0 +1,236 @@
+<html>
+<head>
+<title>KIKO: Listening exercise, unit 1</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<SCRIPT LANGUAGE="JavaScript">
+
+function mailIt(form) {
+  var data = document.testForm
+  var userInfo = ""
+  var mytext = ""
+
+ if(data.recipient.value == ""){
+    alert("You must enter your teacher's address!");
+    return false;
+  } 
+  else{
+  userInfo += "To: " + data.recipient.value + "\n"
+  } 
+ if (data.emailad.value == ""){
+       alert("You need to enter your email address also!");
+       return false;
+ }
+  else{
+  userInfo += "From: " + data.emailad.value + "\n"
+ } 
+  userInfo += "Subject: " + "Student exercise" + "\n\n"
+  userInfo += "Student: " + data.student.value + "\n"
+  userInfo += "Page Title:  " + document.title + "\n\n"
+
+ for (var i = 1; i <= 10; i++){
+    if (eval("data.x" + i + ".value != ''")){
+	      mytext = "Word" + i + " = " + eval("data.x" + i + ".value") + "\n"
+  }
+}
+
+      if (data.s1.value != "") { 
+       	mytext += "Question 1: Je, maamkio ni sawasawa katika Tanzania yote?\n\n"
+	mytext += "Answer:\n"  + data.s1.value + "\n\n"
+      }
+      if (data.s2.value != "") {
+       	mytext += "Question 2: Watoto wa Zanzibar wanaamkia vipi?\n\n"
+	mytext += "Answer:\n"  + data.s2.value + "\n\n"
+      }
+      if (data.s3.value != ""){
+	mytext += "Question 3: Nini jawabu ya msalkheri?\n\n"
+        mytext += "Answer:\n" + data.s3.value + "\n\n"
+       }
+      if (data.s4.value != ""){ 
+	mytext += "Question 4: Kwa desturi nani huanza kuamkia?\n\n"
+        mytext += "Sentence 4:\n" + data.s4.value + "\n\n"
+      }
+      if (data.s5.value != ""){ 
+       	mytext += "Question 5: Watoto wanaamkia vipi katika Tanzania bara?\n\n"
+	mytext += "Answer:\n" + data.s5.value + "\n\n"
+      }
+      if (data.s6.value != "") { 
+      	mytext += "Question 6: Msalkheri na subalkheri hutumika wakati gani?\n\n"
+	mytext += "Answer:\n" + data.s6.value + "\n\n"
+      } 
+      if (data.s7.value != ""){
+      	mytext += "Question 7: Write a short essay based on the story.\n\n"
+	mytext += "Answer:\n" + data.s7.value + "\n\n"
+      }
+    form.mailBody.value = "(bs)" + userInfo + mytext + "(es)"
+     form.action = "http://ccat.sas.upenn.edu/cgi-bin/tamil/sendkiko"
+
+  return true
+
+}
+
+</SCRIPT>
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table border="0" cellpadding="4" cellspacing="0" width="100%">
+  <tr> 
+    <td><img src="../media/images/kikoLogo.gif" width="173" height="78"></td>
+    <td> 
+      <p align="right"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><a href="../index.html">Home<br>
+        </a></font><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><a href="../overview.html">Overview<br>
+        </a></font><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><a href="../techHelp.html">Technical 
+        Help</a></font></p>
+    </td>
+  </tr>
+  <tr> 
+    <td colspan="2" bgcolor="#CCCCFF"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><A HREF="../unitSelect.html">Select 
+      Unit </A> &gt; <A HREF="index.html">Unit 1: <I>Kukutana</I></A> &gt; <b>Cloze 
+      exercise (supplementary):</b></font></td>
+  </tr>
+</table>
+<ul>
+  <font face="Verdana, Arial, Helvetica, sans-serif"> <font color="#000000"> <FONT SIZE=+2><font size="+1">Reading 
+  &amp; Listening </font></FONT><BR>
+  </font></font> 
+  <p></P>
+  <LI><font color="#000000" size="2"><font face="Verdana, Arial, Helvetica, sans-serif">Listen 
+    to the story </font></font></LI>
+  <LI><font color="#000000" size="2"><font face="Verdana, Arial, Helvetica, sans-serif">Fill-out 
+    the blanks with the words you hear</font></font></LI>
+  <LI><font color="#000000" size="2"><font face="Verdana, Arial, Helvetica, sans-serif">Answer 
+    questions </font></font></LI>
+  <LI><font color="#000000" size="2"><font face="Verdana, Arial, Helvetica, sans-serif">Write 
+    a brief narration about what you listen</font></font></LI>
+  <LI><font color="#000000" size="2"><font face="Verdana, Arial, Helvetica, sans-serif">Mail 
+    the answers to your teacher. </font></font><font color="#008000" face="Verdana, Arial, Helvetica, sans-serif"><FONT SIZE=+2><BR>
+    </FONT></font><font color="#FF0000" face="Verdana, Arial, Helvetica, sans-serif"><font size="+2" color="#000000"><font size="2"><a href="../media/av/sounds/kiswa4.ra">(Click 
+    here to hear reading)</a></font></font><font size="+4" color="#000000"> <BR>
+    <font size="+2">Maamkio</font></font><FONT SIZE=+4><font size="+2"> </font></font></font> <FORM NAME="testForm"> 
+    <font size="+2" face="Verdana, Arial, Helvetica, sans-serif"><font color="#000000" size="2">Watu 
+    wa Tanzania 
+    <INPUT name="x1" size=10>
+    Kiswahili lakini wana 
+    <INPUT name="x2" size=10>
+    tofauti. Kwanza watoto wa Zanzibar 
+    <INPUT name="x3" size=10>
+    wanasema 'chechei' kuamkia watu 
+    <INPUT name="x4" size=10>
+    na jawabu lake ni 'chechei'. Watoto 
+    <INPUT name="x5" size=10>
+    na watu wazima wanaamkia wakubwa wao kwa 
+    <INPUT name="x6" size=10>
+    'subalkheri' kwa wakati wa 
+    <INPUT name="x7" size=10>
+    na 'msalkheri' kwa jioni. Wakubwa 
+    <INPUT name="x8" size=10>
+    'subalkheri' au 'msalkheri'. Huko Tanzania bara, 
+    <INPUT name="x9" size=10>
+    na watu wazima 
+    <INPUT name="x10" size=10>
+    wakubwa wao kwa kusema 'shikamoo' na wakubwa wanajibu kwa kusema 'marahaba.' 
+    Kwa desturi watoto huanza kuamkia watu wazima. </font><font color="#0000FF" size="2"><BR>
+    </font></font><FONT SIZE=+2><font color="#0000FF" face="Verdana, Arial, Helvetica, sans-serif"><font size="3"><b><font color="#000000"><br>
+    Maswali </font></b></font><FONT SIZE=+4><BR>
+    </FONT></font><font color="#008000" face="Verdana, Arial, Helvetica, sans-serif"><font size="3"><b><font color="#000000">On-line 
+    exercise: Answer the following questions and send them to your instructor. 
+    </font> </b> </font></font> </font> 
+    <table>
+      <TR> 
+      <TR> 
+        <TD><font color="#000000" face="Verdana, Arial, Helvetica, sans-serif" size="3">1. 
+          Je, maamkio ni sawasawa katika Tanzania yote?<BR>
+          <TEXTAREA NAME="s1" COLS=55 ROWS=2 WRAP=virtual></TEXTAREA>
+          </font></TD>
+      </TR>
+      <TR> 
+        <TD><font color="#000000" face="Verdana, Arial, Helvetica, sans-serif" size="3">2. 
+          Watoto wa Zanzibar wanaamkia vipi? <BR>
+          <TEXTAREA NAME="s2" COLS=55 ROWS=2 WRAP=virtual></TEXTAREA>
+          </font></TD>
+      </TR>
+      <TR> 
+        <TD><font color="#000000" face="Verdana, Arial, Helvetica, sans-serif" size="3">3. 
+          Nini jawabu ya msalkheri? <BR>
+          <TEXTAREA NAME="s3" COLS=55 ROWS=2 WRAP=virtual></TEXTAREA>
+          </font></TD>
+      </TR>
+      <TR> 
+        <TD><font color="#000000" face="Verdana, Arial, Helvetica, sans-serif" size="3">4. 
+          Kwa desturi nani huanza kuamkia? <BR>
+          <TEXTAREA NAME="s4" COLS=55 ROWS=2 WRAP=virtual></TEXTAREA>
+          </font></TD>
+      </TR>
+      <TR> 
+        <TD><font color="#000000" face="Verdana, Arial, Helvetica, sans-serif" size="3">5. 
+          Watoto wanaamkia vipi katika Tanzania bara?<BR>
+          <TEXTAREA NAME="s5" COLS=55 ROWS=2 WRAP=virtual></TEXTAREA>
+          </font></TD>
+      </TR>
+      <TR> 
+        <TD><font color="#000000" face="Verdana, Arial, Helvetica, sans-serif" size="3">6. 
+          Msalkheri na subalkheri hutumika wakati gani? <BR>
+          <TEXTAREA NAME="s6" COLS=55 ROWS=2 WRAP=virtual></TEXTAREA>
+          </font></TD>
+      </TR>
+      <TR> 
+        <TD><font color="#000000" face="Verdana, Arial, Helvetica, sans-serif" size="3">7. 
+          Write a short essay based on the story<BR>
+          <TEXTAREA NAME="s7" COLS=55 ROWS=8 WRAP=virtual></TEXTAREA>
+          </font></TD>
+      </TR>
+      <tr> 
+        <td> <font face="Verdana, Arial, Helvetica, sans-serif" size="3"> 
+          <INPUT TYPE="reset" NAME="Clear" VALUE="clear">
+          </font></td>
+      </tr>
+      <TR> 
+        <TH ALIGN=left><font face="Verdana, Arial, Helvetica, sans-serif" size="3">Enter 
+          your instructor's email: 
+          <INPUT NAME="recipient"
+SIZE=25 VALUE="">
+          </font></TH>
+      </TR>
+      <TR> 
+        <TH ALIGN=right> 
+          <div align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="3">Your 
+            name: 
+            <INPUT NAME="student" SIZE=25>
+            </font></div>
+        </TH>
+      </TR>
+      <TR> 
+        <TH ALIGN=right> 
+          <div align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="3">Your 
+            email: 
+            <INPUT NAME="emailad" SIZE=25>
+            </font></div>
+        </TH>
+      </TR>
+    </table>
+    <table>
+    </table>
+ 
+    <table>
+      <font face="Verdana, Arial, Helvetica, sans-serif"></form>
+      </font> 
+      <FORM NAME="mailForm" ACTION="" METHOD="post" ENCTYPE="multipart/form-data" onSubmit="return mailIt(this)">
+        <INPUT TYPE="hidden" NAME="mailBody" VALUE="">
+        <TR> 
+          <TD COLSPAN=2 ALIGN=center> 
+            <INPUT TYPE="submit" VALUE="Send it.">
+          </TD>
+        </TR>
+      </form>
+    </table>
+</ul>
+<table border=0 width="100%">
+ <tr><td><p>&nbsp;</p></td></tr>
+<tr bgcolor="#FFFFCC"> 
+    <td colspan="2"> 
+      <p><!-- #BeginLibraryItem "../Library/footer.lbi" --><font face="Verdana, Arial, Helvetica, sans-serif" size="2">&copy; African Studies 
+Institute, University of Georgia.</font><!-- #EndLibraryItem --></p>
+    </td>
+  </tr></table>
+
+</BODY>
+</HTML>

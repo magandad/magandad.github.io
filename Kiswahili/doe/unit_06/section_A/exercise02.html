@@ -1,0 +1,261 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<HTML><HEAD><TITLE>Panga maneno yafanye sentensi kamili (Arrange the words to make a complete sentence)</TITLE>
+<META content="text/html; charset=windows-1252" http-equiv=Content-Type>
+<SCRIPT language=JavaScript>
+function check(form){
+if (form.textbox.value == form.textbox1.value){
+alert("Sawa");
+}
+else{
+alert("Si. Sawa. Jaribu tena.");
+}
+}
+function addit(text, form){
+if(form.textbox.value == ""){
+form.textbox.value = text;
+}
+else{
+form.textbox.value = form.textbox.value + " " + text;
+}
+}
+function mailIt(form) {
+  var data = document.mailForm
+  var userInfo = "" 
+ var mytext = "" 
+ if(data.recipient.value == ""){ 
+  alert("You must enter your teacher's address!"); 
+   return false;
+ }
+ else{ 
+ userInfo += "To: " + data.recipient.value + "\n" 
+ }
+ if (data.emailad.value == ""){ 
+alert("You need to enter your email address also!"); 
+return false;
+}
+ else{
+userInfo += "From: " + data.emailad.value + "\n" 
+}
+userInfo += "Subject: " + "Student exercise" + "\n\n" 
+userInfo += "Student: " + data.student.value + "\n" 
+userInfo += "Page Title:  " + document.title + "\n\n" 
+data = document.testForm1
+if(data.textbox.value != ""){
+mytext += "Sentence 1 = "  + data.textbox.value + "\n" 
+}
+data = document.testForm2
+if(data.textbox.value != ""){
+mytext += "Sentence 2 = "  + data.textbox.value + "\n" 
+}
+data = document.testForm3
+if(data.textbox.value != ""){
+mytext += "Sentence 3 = "  + data.textbox.value + "\n" 
+}
+data = document.testForm4
+if(data.textbox.value != ""){
+mytext += "Sentence 4 = "  + data.textbox.value + "\n" 
+}
+data = document.testForm5
+if(data.textbox.value != ""){
+mytext += "Sentence 5 = "  + data.textbox.value + "\n" 
+}
+form.mailBody.value = "(bs)" + userInfo + mytext + "\n" + "(es)" 
+form.action = "http://ccat.sas.upenn.edu/cgi-bin/tamil/sendkiko" 
+return true
+}
+</SCRIPT>
+
+<META content="MSHTML 5.00.2920.0" name=GENERATOR></HEAD>
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<CENTER>
+  <table border="0" cellpadding="4" cellspacing="0" width="100%" height="88">
+    <tr> 
+      <td><img src="../../media/images/kikoLogo.gif" width="173" height="78"></td>
+      <td> 
+        <p align="right"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><a href="../index.html">Home<br>
+          </a></font><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><a href="../overview.html">Overview<br>
+          </a></font><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><a href="../techHelp.html">Technical 
+          Help</a></font></p>
+      </td>
+    </tr>
+    <tr> 
+      <td colspan="2" bgcolor="#CCCCFF" height="2"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><a href="../../unitSelect.html">Select 
+        Unit </a> &gt; <a href="../index.html">Unit 6: Elimu</a>&gt; <b>Exercise 
+        2: </b></font></td>
+    </tr>
+  </table>
+  <br>
+  <table>
+    <tbody> 
+    <tr> 
+      <td bgcolor=#FFFFFF><font color="#000000" size="3" face="Verdana, Arial, Helvetica, sans-serif"><b>Panga 
+        maneno yafanye sentensi kamili (Arrange the words to make a complete sentence)</b></font></td>
+    </tr>
+    </tbody>
+  </table>
+</CENTER>
+<FORM name=testForm1>
+  <TABLE border=0>
+    <TBODY> 
+    <TR>
+    <TD><TEXTAREA cols=55 name=textbox rows=4 wrap=virtual></TEXTAREA></TD><INPUT 
+    name=textbox1 type=hidden 
+    value="Baada ya kusafisha mazingira wanafunzi wanakwenda darasani"> 
+    <TD><INPUT onclick=javascript:check(this.form) type=button value=Check><BR><INPUT type=reset value=Clear></TD></TR></TBODY></TABLE>
+<CENTER>
+    <TABLE border=0 align="left">
+      <TBODY> 
+      <TR bgcolor="#FFFFFF"> 
+        <TD> 
+          <INPUT onclick="javascript:addit(value, this.form)" type=button value=mazingira width="25"></TD>
+        <TD> 
+          <INPUT onclick="javascript:addit(value, this.form)" type=button value=ya width="25"></TD>
+        <TD> 
+          <INPUT onclick="javascript:addit(value, this.form)" type=button value=darasani width="25"></TD>
+        <TD> 
+          <INPUT onclick="javascript:addit(value, this.form)" type=button value=wanafunzi width="25"></TD>
+        <TD> 
+          <INPUT onclick="javascript:addit(value, this.form)" type=button value=Baada width="25"></TD>
+        <TD> 
+          <INPUT onclick="javascript:addit(value, this.form)" type=button value=kusafisha width="25"></TD>
+  
+        <TD> 
+          <INPUT onclick="javascript:addit(value, this.form)" type=button value=wanakwenda width="25"></TD></TR></TBODY></TABLE></CENTER></FORM>
+<FORM name=testForm2>
+  <br>
+  <TABLE border=0>
+    <TBODY> 
+    <TR>
+    <TD><TEXTAREA cols=55 name=textbox rows=4 wrap=virtual></TEXTAREA></TD><INPUT  name=textbox1 type=hidden value="Tukifungua shule nitaingia darasa la tano"> 
+
+    <TD><INPUT onclick=javascript:check(this.form) type=button value=Check><BR><INPUT type=reset value=Clear></TD></TR></TBODY></TABLE>
+<CENTER>
+    <TABLE border=0 align="left">
+      <TBODY> 
+      <TR bgcolor="#FFFFFF"> 
+        <TD> 
+          <INPUT onclick="javascript:addit(value, this.form)" type=button value=shule width="25"></TD>
+        <TD> 
+          <INPUT onclick="javascript:addit(value, this.form)" type=button value=darasa width="25"></TD>
+        <TD> 
+          <INPUT onclick="javascript:addit(value, this.form)" type=button value=tano width="25"></TD>
+        <TD> 
+          <INPUT onclick="javascript:addit(value, this.form)" type=button value=la width="25"></TD>
+        <TD> 
+          <INPUT onclick="javascript:addit(value, this.form)" type=button value=nitaingia width="25"></TD>
+        <TD> 
+          <INPUT onclick="javascript:addit(value, this.form)" type=button value=Tukifungua width="25"></TD></TR></TBODY></TABLE></CENTER></FORM>
+<FORM name=testForm3>
+  <br>
+  <TABLE border=0>
+    <TBODY> 
+    <TR>
+      <TD>
+        <textarea cols=55 name=textbox rows=4 wrap=virtual></textarea>
+      </TD>
+      <INPUT name=textbox1 type=hidden value="Kwa nini wanafunzi wanasoma kiingereza ?"> 
+
+    <TD><INPUT onclick=javascript:check(this.form) type=button value=Check><BR><INPUT type=reset value=Clear></TD></TR></TBODY></TABLE>
+<CENTER>
+    <TABLE border=0 align="left">
+      <TBODY> 
+      <TR bgcolor="#FFFFFF"> 
+        <TD width="75"> 
+          <INPUT onclick="javascript:addit(value, this.form)" type=button value=wanasoma width="25">
+        </TD>
+        <TD width="50"> 
+          <INPUT onclick="javascript:addit(value, this.form)" type=button value=wanafunzi width="25">
+        </TD>
+        <TD width="67"> 
+          <INPUT onclick="javascript:addit(value, this.form)" type=button value="Kwa nini" width="25">
+        </TD>
+        <TD width="81"> 
+          <INPUT onclick="javascript:addit(value, this.form)" type=button value=kiingereza width="25">
+        </TD>
+        <TD width="29"> 
+          <INPUT onclick="javascript:addit(value, this.form)" type=button value=? width="25">
+        </TD>
+      </TR>
+      </TBODY>
+    </TABLE>
+  </CENTER></FORM>
+<FORM name=testForm4>
+  <br>
+  <TABLE border=0>
+    <TBODY> 
+    <TR>
+    <TD><TEXTAREA cols=55 name=textarea rows=4 wrap=virtual></TEXTAREA></TD><INPUT  name=textbox1 type=hidden value="Tutasoma kwa muda wa mwezi mmoja"> 
+    <TD><INPUT onclick=javascript:check(this.form) type=button value=Check><BR><INPUT type=reset value=Clear></TD></TR></TBODY></TABLE>
+<CENTER>
+    <TABLE border=0 align="left">
+      <TBODY> 
+      <TR bgcolor="#FFFFFF"> 
+        <TD> 
+          <INPUT onclick="javascript:addit(value, this.form)" type=button value=mmoja width="25"></TD>
+        <TD> 
+          <INPUT onclick="javascript:addit(value, this.form)" type=button value=Tutasoma width="25"></TD>
+        <TD> 
+          <INPUT onclick="javascript:addit(value, this.form)" type=button value=kwa width="25"></TD>
+        <TD> 
+          <INPUT onclick="javascript:addit(value, this.form)" type=button value=wa width="25"></TD>
+        <TD> 
+          <INPUT onclick="javascript:addit(value, this.form)" type=button value=mwezi width="25"></TD>
+        <TD> 
+          <INPUT onclick="javascript:addit(value, this.form)" type=button value=muda width="25"></TD></TR></TBODY></TABLE></CENTER></FORM>
+<FORM name=testForm5>
+  <br>
+  <TABLE border=0>
+    <TBODY> 
+    <TR>
+    <TD><TEXTAREA cols=55 name=textbox rows=4 wrap=virtual></TEXTAREA></TD><INPUT name=textbox1 type=hidden value="Tuvae sare za rangi nyeupe"> 
+    <TD><INPUT onclick=javascript:check(this.form) type=button value=Check><BR><INPUT type=reset value=Clear></TD></TR></TBODY></TABLE>
+<CENTER>
+    <TABLE border=0 align="left" width="318">
+      <TBODY> 
+      <TR bgcolor="#FFFFFF"> 
+        <TD width="57"> 
+          <INPUT onclick="javascript:addit(value, this.form)" type=button value=sare width="25">
+        </TD>
+        <TD width="78"> 
+          <INPUT onclick="javascript:addit(value, this.form)" type=button value=nyeupe width="25">
+        </TD>
+        <TD width="67"> 
+          <INPUT onclick="javascript:addit(value, this.form)" type=button value=Tuvae width="25">
+        </TD>
+        <TD width="61"> 
+          <INPUT onclick="javascript:addit(value, this.form)" type=button value=rangi width="25">
+        </TD>
+        <TD width="33"> 
+          <INPUT onclick="javascript:addit(value, this.form)" type=button value=za width="25">
+        </TD>
+      </TR>
+      </TBODY> 
+    </TABLE>
+  </CENTER></FORM>
+<br>
+<br>
+<TABLE>
+  <FORM action="" encType=multipart/form-data method=post name=mailForm 
+  onsubmit="return mailIt(this)"><INPUT name=mailBody type=hidden> 
+  <TBODY>
+  <TR>
+    <TD>Instructor's Email: <INPUT name=recipient size=30></TD><BR>
+  <TR>
+    <TD>Your Name: <INPUT name=student size=30></TD><BR>
+  <TR>
+    <TD>Your email: <INPUT name=emailad size=30></TD><BR>
+  <TR>
+    <TD align=middle colSpan=2><INPUT type=submit value="Send it."> 
+  </TD></FORM></TBODY></TABLE>
+<br>
+<table border=0 width="100%">
+ <tr><td><p>&nbsp;</p></td></tr>
+<tr bgcolor="#FFFFCC"> 
+    <td colspan="2"> 
+      <p><!-- #BeginLibraryItem "../Library/footer.lbi" --><font face="Verdana, Arial, Helvetica, sans-serif" size="2">&copy; African Studies 
+Institute, University of Georgia.</font><!-- #EndLibraryItem --></p>
+    </td>
+  </tr></table>
+
+</BODY></HTML>

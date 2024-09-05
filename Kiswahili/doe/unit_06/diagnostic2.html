@@ -1,0 +1,364 @@
+
+
+<HTML><HEAD><TITLE>Unit 6 diagnostic test</TITLE></HEAD>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function mailIt(form) {
+
+  var data = document.testForm
+
+  var userInfo = "" 
+
+ var mytext = "" 
+
+ if(data.recipient.value == ""){ 
+
+  alert("You must enter your teacher's address!"); 
+
+   return false;
+
+ }
+
+ else{ 
+
+ userInfo += "To: " + data.recipient.value + "\n" 
+
+ }
+
+ if (data.emailad.value == ""){ 
+
+alert("You need to enter your email address also!"); 
+
+return false;
+
+}
+
+ else{
+
+userInfo += "From: " + data.emailad.value + "\n" 
+
+}
+
+userInfo += "Subject: " + "Student exercise" + "\n\n" 
+
+userInfo += "Student: " + data.student.value + "\n" 
+
+userInfo += "Page Title:  " + document.title + "\n\n" 
+
+if (data.box1.value != ""){
+
+mytext += "Response for question 1 "  +  "\n\n" + data.box1.value + "\n\n" 
+
+}
+
+else{
+
+   alert("Answer first question.");
+
+   return false;
+
+   }
+
+if (data.box2.value != ""){
+
+mytext += "Response for question 2 "  +  "\n\n" + data.box2.value + "\n\n" 
+
+}
+
+else{
+
+   alert("Answer second question.");
+
+   return false;
+
+   }
+
+if (data.box3.value != ""){
+
+mytext += "Response for question 3 "  +  "\n\n" + data.box3.value + "\n\n" 
+
+}
+
+else{
+
+   alert("Answer third question.");
+
+   return false;
+
+   }
+
+form.mailBody.value = "(bs)" + userInfo + mytext + "(es)" 
+
+form.action = "http://ccat.sas.upenn.edu/cgi-bin/tamil/sendkikodata" 
+
+return true
+
+}
+
+function rightString(InString, num)  {
+
+OutString = InString.substring
+
+(InString.length-num,InString.length);
+
+return (OutString);
+
+}
+
+function set(text){
+
+var ret = rightString(text, 3)
+
+if (ret == "gif" || ret == "jpg" ){
+
+text = "<img src='" + text + "'>" 
+
+win = window.open("", "newwin", "height=250,width=400")
+
+win.document.write (text)
+
+win.document.close();
+
+}
+
+else if (ret == "mov"){
+
+location = text
+
+}
+
+else if (ret == "htm"){
+
+location = text
+
+}
+
+else if (ret == "tml"){
+
+location = text
+
+}
+
+else if (ret == "ram"){
+
+location = text
+
+}
+
+else if (ret == ".ra"){
+
+location = text
+
+}
+
+else if (ret == ".au"){
+
+location = text
+
+}
+
+else{
+
+win = window.open("", "newwin", "height=250,width=400")
+
+win.document.write ("<font color=red size=+4>" + text)
+
+win.document.close();
+
+win.creator = self
+
+}
+
+}
+
+</script>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<table border="0" cellpadding="4" cellspacing="0" width="100%">
+
+  <tr> 
+
+    <td><img src="../media/images/kikoLogo.gif" width="173" height="78"></td>
+
+    <td> 
+
+      <p align="right"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><a href="../index.html">Home<br>
+
+        </a></font><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><a href="../overview.html">Overview<br>
+
+        </a></font><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><a href="../techHelp.html">Technical 
+
+        Help</a></font></p>
+
+    </td>
+
+  </tr>
+
+  <tr> 
+
+    <td colspan="2" bgcolor="#CCCCFF" height="2"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><a href="../unitSelect.html">Select 
+
+      Unit </a> &gt; <a href="index.html">Unit 6: Elimu</a>&gt; <b>Diagnostic 
+
+      test </b></font></td>
+
+  </tr>
+
+</table>
+
+<center>
+
+</center>
+
+<center><table border=0><tr>
+
+      <td width="401"><font color="black" size="2" face="Verdana, Arial, Helvetica, sans-serif"><strong>Jibu
+          maswali yote (Answer all questions).</strong></font></td>
+
+    </tr></table></center>
+
+<center>
+
+  <table border=0 width="95%" bordercolor="#FFFFFF" bgcolor="#FFFFFF">
+
+    <tr>
+
+      <td bgcolor='#FFFFFF'> 
+
+        <FORM NAME="testForm">
+
+          
+
+        <table border=0>
+
+          <tr>
+
+              <td><font face="Verdana, Arial, Helvetica, sans-serif" color="black" size="2">1.
+                   Andika aya moja juu ya shule ya msingi ambayo ulihudhuria.
+                  Lini 
+                ulihudhuria shule ya msingi? Ulipenda masomo gani? Mwalimu wako
+                   bora alikuwa mwalimu gani? Kwa nini? Ulipenda michezo gani
+                  ya 
+                shule? Na kadhalika. (Write a short paragraph on your elementary
+                   school. When did you attend elementary school? What classes
+                  did 
+                you like? Who was your favorite teacher? Why? What kind of games
+                   did you like? etc.)</font></td>
+
+            </tr></table>
+
+        <br>
+
+          <textarea name='box1' rows=10 cols=70 wrap=virtual value='Enter here'></textarea>
+
+          <br>
+
+<table border=0> <tr>
+
+              <td><font color="black" size="2" face="Verdana, Arial, Helvetica, sans-serif">2.
+                   Andika aya moja juu ya shule yako ya sekondari. Lini ulisoma
+                  shule 
+                ya sekondari? Ulichukua mkondo gani? Wanafunzi wa Tanzania wanavaa
+                   sare. Je wewe ulivaa mavazi gani? Na kadhalika. (Write a paragraph
+                  
+                on the secondary/high school that you attended. When did you
+                  attend secondary school? What courses did you take? Tanzanian
+                  students
+                  
+                wear school uniform. What kind of clothes did you wear? etc.)</font></td>
+
+            </tr></table>
+
+<br>
+
+          <textarea name='box2' rows=10 cols=70 wrap=virtual value='Enter here'></textarea>
+
+          <br>
+
+<table border=0> <tr>
+
+              <td><font color="black" size="2" face="Verdana, Arial, Helvetica, sans-serif">3.
+                   Unakutana na rafiki yako. Sasa mko likizo lakini mnasoma vyuo
+                  
+                vikuu mbali mbali. Mnazungumza juu ya vyuo vyenu vikuu: viko
+                  wapi? mnasoma nini; walimu wenu; na kadhalika. Andika mazungumzo
+                  yenu. 
+                (You meet your friend. Now you are on vacation but you attend
+                   different schools. You talk about your different schools:
+                  where 
+                they are located; what courses you are taking; your teachers;
+                   etc. Write your conversation).</font></td>
+
+            </tr></table>
+
+<br>
+
+          <textarea name='box3' rows=10 cols=70 wrap=virtual value='Enter here'></textarea>
+
+          <br>
+
+          <br>
+
+          <br>
+
+</td></tr>
+
+<tr><td>
+
+Instructor's Email: <input size='30' NAME='recipient'><br>
+
+Your Name: <input size='30' NAME='student'><br>
+
+Your email: <input size='30' NAME='emailad'><br>
+</form>
+</td></tr>
+
+</table border=0></center>
+
+<table border=0>
+
+<form name = "mailForm" 
+
+Action="" 
+
+METHOD="post" 
+
+ENCTYPE = "multipart/form-data" 
+onSubmit="return mailIt(this)">
+
+<INPUT TYPE="hidden" NAME="mailBody" VALUE="">
+
+<tr>
+
+<TD COLSPAN=2 ALIGN=center>
+
+<INPUT TYPE="submit" VALUE="Send it.">
+
+</TR>
+
+</FORM>
+
+</table>
+
+<table border=0 width="100%">
+
+<tr><td><p>&nbsp;</p></td></tr>
+
+<tr bgcolor="#FFFFCC"> 
+
+    <td colspan="2"> 
+
+      <p><!-- #BeginLibraryItem "../Library/footer.lbi" --><font face="Verdana, Arial, Helvetica, sans-serif" size="2">&copy; African Studies 
+
+Institute, University of Georgia.</font><!-- #EndLibraryItem --></p>
+
+    </td>
+
+  </tr></table>
+
+
+
+</BODY></HTML>
+

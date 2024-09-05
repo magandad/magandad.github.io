@@ -1,0 +1,250 @@
+<html>
+<TITLE>Kiswahili Listening Exercise - Unit 3</TITLE>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+
+function mailIt(form) {
+  var data = document.testForm
+  var userInfo = ""
+  var mytext = ""
+
+ if(data.recipient.value == ""){
+    alert("You must enter your teacher's email address!");
+    return false;
+  } 
+  else{
+  userInfo += "To: " + data.recipient.value + "\n"
+  }  
+ if (data.emailad.value == ""){
+       alert("You need to enter your email address also!");
+       return false;
+ }
+  else{
+  userInfo += "From: " + data.emailad.value + "\n"
+ }  
+  userInfo += "Subject: " + "Student exercise" + "\n\n"
+  userInfo += "Student: " + data.student.value + "\n"
+  userInfo += "Page Title:  " + document.title + "\n\n"
+ 
+ for (var i = 1; i <= 21; i++){
+    if (eval("data.x" + i + ".value != ''")){
+	      mytext = "Word" + i + " = " + eval("data.x" + i + ".value") + "\n"
+  }
+}
+      if (data.s1.value != "") {   
+       mytext += "Question 1:  Ukoo wa mwandishi una watu wangapi?\n\n"
+       mytext +=  data.s1.value + "\n\n"
+      }
+      if (data.s2.value != "") {
+       mytext += "Question 2: Nani alizaliwa mwisho? \n\n"
+       mytext +=  data.s2.value + "\n\n"
+      }
+      if (data.s3.value != ""){
+         mytext += "Question 3: Bakari anafanya kazi gani? " + "\n\n"
+         mytext += data.s3.value + "\n\n"
+       }
+      if (data.s4.value != ""){
+        mytext += "Question 4: Hadija na Bakari wana uhusiano gani na mwandishi?  " + "\n\n"     
+        mytext += data.s4.value + "\n\n"
+      }
+      if (data.s5.value != ""){
+        mytext += "Question 5: Eleza nani anafanya kazi zaidi--mama au baba yangu?  " + "\n" 
+        mytext += "\n" + data.s5.value + "\n\n"
+      }
+      if (data.s6.value != "") {
+      mytext += "Question 6: Lini mwandishi anaonana na Bakari? " + "\n" 
+      mytext += "\n" + data.s6.value + "\n\n"
+      }  
+      if (data.s7.value != ""){
+      mytext += "Question 7: Write a short essay based on the story \n"
+      mytext += "\n" + data.s7.value + "\n\n"
+      }
+    
+     form.mailBody.value = "(bs)" + userInfo + mytext + "(es)"
+	
+     form.action = "http://ccat.sas.upenn.edu/cgi-bin/tamil/sendkiko"
+  return true
+  
+}
+
+
+</script>
+      
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<table border="0" cellpadding="4" cellspacing="0" width="100%">
+  <tr> 
+    <td><img src="../media/images/kikoLogo.gif" width="173" height="78"></td>
+    <td> 
+      <p align="right"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><a href="../index.html">Home<br>
+        </a></font><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><a href="../overview.html">Overview<br>
+        </a></font><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><a href="../techHelp.html">Technical 
+        Help</a></font></p>
+    </td>
+  </tr>
+  <tr> 
+    <td colspan="2" bgcolor="#CCCCFF"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><A HREF="../unitSelect.html">Select 
+      Unit </A> &gt; <A HREF="index.html">Unit 3: <I> Familia - Family </I></A> 
+      &gt; <b>Diagnostic test</b></font></td>
+  </tr>
+</table>
+<div align="left"><br>
+  <a href="../media/av/sounds/kiswa1.ra"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Click 
+  here to listen to the story.</font></a><br>
+</div>
+<li><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Listen to the 
+  story </font>
+<li><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Fill-out the blanks 
+  with the words you hear</font>
+<li><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Answer questions 
+  </font>
+<li><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Write a brief 
+  narration about what you listen </font>
+<li> 
+  <div align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Mail 
+    the answers to your teacher. </font> 
+    <table border=0>
+      <tr> 
+        <td bgcolor="#FFFFFF"> 
+          <center>
+            <font color="red" size=+2><br>
+            <b><font color="#000000" size="3" face="Verdana, Arial, Helvetica, sans-serif">ZOEZI 
+            LA KWANZA <br>
+            Ukoo wangu </font></b></font> 
+          </center>
+          <FORM NAME="testForm">
+            <font face="Verdana, Arial, Helvetica, sans-serif" size="2">Ukoo 
+            <input name="x1" size=10>
+            si mkubwa 
+            <input name="x2" size=10>
+            . Nina baba na mama na 
+            <input name="x3" size=10>
+            wawili. Baba 
+            <input name="x4" size=10>
+            jina lake Hamisi Mashaka. Yeye ni 
+            <input name="x5" size=10>
+            . Mama yangu 
+            <input name="x6" size=10>
+            lake ni Mariam Mashauri. Yeye ni mkulima 
+            <input name="x7" size=10>
+            . Vile vile mama 
+            <input name="x8" size=10>
+            nyumba yetu. Ndugu yangu 
+            <input name="x9" size=10>
+            jina lake ni Bakari na 
+            <input name="x10" size=10>
+            ni Hadija. Hadija ni 
+            <input name="x11" size=10>
+            wa shule ya 
+            <input name="x12" size=10>
+            . Anasoma darasa la 
+            <input name="x13" size=10>
+            . Mimi ninasoma 
+            <input name="x14" size=10>
+            Kikuu cha Dar-es-salaam. Ninasoma 
+            <input name="x15" size=10>
+            ya lugha. Bakari si mwanafunzi. Yeye ni 
+            <input name="x16" size=10>
+            katika ofisi ya 
+            <input name="x17" size=10>
+            . Mimi ninakaa kwenye 
+            <input name="x18" size=10>
+            moja la Chuo Kikuu. Bakari ana 
+            <input name="x19" size=10>
+            yake sasa lakini 
+            <input name="x20" size=10>
+            nyumbani kwa wazazi kila siku ya </font> 
+            <input name="x21" size=10>
+            . 
+          
+        </td>
+      </tr>
+    </table>
+    <font color="blue" size=+4><b><font size="4" color="#000000" face="Verdana, Arial, Helvetica, sans-serif">Maswali</font></b> 
+    </font><br>
+    <font size="2" face="Verdana, Arial, Helvetica, sans-serif">On-line exercise: 
+    Answer the following questions and send them to your instructor. </font> </div>
+  <br>
+  <TABLE width="503">
+    <TR> 
+      <td width="495"><font color="#000000" size="3" face="Verdana, Arial, Helvetica, sans-serif"> 
+        1. Ukoo wa mwandishi una watu wangapi? <br>
+        <TEXTAREA NAME="s1" COLS=55 ROWS=2 WRAP=virtual></TEXTAREA>
+        </font></td>
+    </TR>
+    <TR> 
+      <td width="495"><font color="#000000" size="3" face="Verdana, Arial, Helvetica, sans-serif"> 
+        2. Nani alizaliwa mwisho? <br>
+        <TEXTAREA NAME="s2" COLS=55 ROWS=2 WRAP=virtual></TEXTAREA>
+        </font></td>
+    </TR>
+    <TR> 
+      <td width="495"><font color="#000000" size="3" face="Verdana, Arial, Helvetica, sans-serif"> 
+        3. Bakari anafanya kazi gani? <br>
+        <TEXTAREA NAME="s3" COLS=55 ROWS=2 WRAP=virtual></TEXTAREA>
+        </font></td>
+    </TR>
+    <TR> 
+      <td width="495"><font color="#000000" size="3" face="Verdana, Arial, Helvetica, sans-serif"> 
+        4. Hadija na Bakari wana uhusiano gani na mwandishi? <br>
+        <TEXTAREA NAME="s4" COLS=55 ROWS=2 WRAP=virtual></TEXTAREA>
+        </font></td>
+    </TR>
+    <TR> 
+      <td width="495"><font color="#000000" size="3" face="Verdana, Arial, Helvetica, sans-serif"> 
+        5. Eleza nani anafanya kazi zaidi--mama au baba yangu? <br>
+        <TEXTAREA NAME="s5" COLS=55 ROWS=2 WRAP=virtual></TEXTAREA>
+        </font></td>
+    </TR>
+    <TR> 
+      <td width="495"><font color="#000000" size="3" face="Verdana, Arial, Helvetica, sans-serif"> 
+        6. Lini mwandishi anaonana na Bakari? <br>
+        <TEXTAREA NAME="s6" COLS=55 ROWS=2 WRAP=virtual></TEXTAREA>
+        </font></td>
+    </TR>
+    <TR> 
+      <td width="495"><font color="#000000" size="3" face="Verdana, Arial, Helvetica, sans-serif">7. 
+        Write a short essay based on the story<br>
+        <TEXTAREA NAME="s7" COLS=55 ROWS=8 WRAP=virtual></TEXTAREA>
+        </font></td>
+    </TR>
+    <TR> 
+      <td width="495">Enter your instructor's email: 
+        <input name="recipient" size=40 value="">
+    </TR>
+    <TR> 
+      <td width="495">Your name: 
+        <input name="student" size=40>
+    </TR>
+    <tr> 
+      <td width="495" height="31">Your email: 
+        <input name="emailad" size=40>
+    </TR>
+    <tr> 
+      <td width="495"> 
+        <INPUT TYPE="reset" NAME="Clear" VALUE="clear">
+     </form></td>
+    </tr>
+  </TABLE>
+  <TABLE>
+    <FORM NAME="mailForm" ACTION="" METHOD="post" ENCTYPE="multipart/form-data" onSubmit="return mailIt(this)">
+      <INPUT TYPE="hidden" NAME="mailBody" VALUE="">
+      <TR> 
+        <TD COLSPAN=2 ALIGN=center> 
+          <input type="submit" value="Send it." name="submit">
+        </td>
+      </TR>
+    </FORM>
+  </TABLE>
+<table border=0 width="100%">
+<tr><td><p>&nbsp;</p></td></tr>
+<tr bgcolor="#FFFFCC"> 
+    <td colspan="2"> 
+      <p><!-- #BeginLibraryItem "../Library/footer.lbi" --><font face="Verdana, Arial, Helvetica, sans-serif" size="2">&copy; African Studies 
+Institute, University of Georgia.</font><!-- #EndLibraryItem --></p>
+    </td>
+  </tr></table>
+</body>
+</html>
