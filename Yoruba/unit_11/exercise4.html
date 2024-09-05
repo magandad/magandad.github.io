@@ -1,0 +1,192 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<HTML><HEAD><TITLE>Unit 11: Exercise 4</TITLE>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"></HEAD>
+<BODY bgColor=#ffffff leftMargin=0 topMargin=0 marginheight="0" marginwidth="0">
+<TABLE cellSpacing=0 cellPadding=4 width="100%" border=0>
+  <TBODY>
+  <tr> 
+    <td bgcolor="#FFFFFF"><img src="../media/images/yorubalogo.gif" width="201" height="87"</td>
+    <td bgcolor="#FFFFFF"> 
+      <p align="right"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><a href="../index.html">Home<br>
+        </a><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><a href="../overview.html">Overview<br>
+        </a><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><a href="../techHelp.html">Technical 
+        Help</a></p>
+    </td>
+  </tr>
+<tr> 
+    <td bgcolor="#CCCCFF"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><a href="../index.html">Home</a></font><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><A HREF="../lessons.html">Select
+         Unit </A> &gt; <font face="Verdana, Arial, Helvetica, sans-serif" size="2"><A HREF="index.html">Unit 11: &Igrave;GB&Agrave; &Agrave;TI &Agrave;K&Oacute;K&Ograve;</A></font> 
+      <b>Exercise 4</td>
+
+    <td bgcolor="#CCCCFF"><a href="exercise4part2.html">Part 2</a> </td>
+  </tr>
+</TBODY></TABLE>
+<SCRIPT language=JavaScript>
+
+CorrectAnswers = new Array();
+
+CorrectAnswers[0]=2;
+CorrectAnswers[1]=5;
+CorrectAnswers[2]=6;
+CorrectAnswers[3]=3;
+CorrectAnswers[4]=7;
+CorrectAnswers[5]=1;
+CorrectAnswers[6]=4;
+
+macrightchar=':-)';
+macwrongchar='X';
+winrightchar=':-)';
+winwrongchar='X';
+
+
+var platform = 'win'
+if (navigator.appVersion.indexOf('Mac') != -1) {platform = 'mac'}
+if (platform == 'mac') {
+	rightchar = unescape(macrightchar)
+	wrongchar = unescape(macwrongchar)
+}
+else {
+	rightchar = unescape(winrightchar)
+	wrongchar = unescape(winwrongchar)
+}
+
+function CheckAnswer(){
+
+	var i = 0;
+	var TotalCorrect = 0;
+	var x = 0;
+	var Score = 0;
+
+	for (i=0; i<CorrectAnswers.length; i++){
+		if (document.QuizForm.elements[i*2].selectedIndex == CorrectAnswers[i]){
+			document.QuizForm.elements[(i*2)+1].value = rightchar;
+			TotalCorrect++;
+		}
+		else{
+			document.QuizForm.elements[(i*2)+1].value = wrongchar;
+		}
+	}
+	Score = Math.floor((TotalCorrect*100)/CorrectAnswers.length);
+	document.CheckForm.ScoreBox.value = Score + '%';
+}
+
+
+</SCRIPT>
+
+<P><strong>PART  ONE:&nbsp;&nbsp; What are the names of these  selected Yoruba days (from the traditional; number based and borrowings from  English and Arabic) in English?</strong>
+<FORM name=QuizForm method=get>
+<UL>
+  <CENTER>
+  <TABLE cellPadding=5 width="100%" border=0>
+    <TBODY>
+    <TR>
+      <TD width="30%">&nbsp;</TD>
+      <TD width="30%"><B><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Match</font></B></TD>
+      <TD></TD></TR>
+    <TR>
+      <TD><B><font face="Ariya">VJ> AJÉ</font></B></TD>
+      <TD><SELECT name=0><OPTION selected>???&nbsp;
+<option>SUNDAY</option>
+<option>MONDAY</option>
+<option>TUESDAY</option>
+<option>WEDNESDAY</option>
+<option>THURSDAY</option>
+<option>FRIDAY</option>
+<option>SATURDAY</option>
+
+</SELECT></TD>
+      <TD><INPUT maxLength=3 size=3 name=1></TD></TR>
+    <TR>
+      <TD><B><font face="Ariya">VJ> ÀLÀMÍSÌ</font></B></TD>
+      <TD><SELECT name=0><OPTION selected>???&nbsp;
+<option>SUNDAY</option>
+<option>MONDAY</option>
+<option>TUESDAY</option>
+<option>WEDNESDAY</option>
+<option>THURSDAY</option>
+<option>FRIDAY</option>
+<option>SATURDAY</option>
+
+</SELECT></TD>
+      <TD><INPUT maxLength=3 size=3 name=3></TD></TR>
+    <TR>
+      <TD><B><font face="Ariya">VJ> CTÌ</font></B></TD>
+      <TD><SELECT name=0><OPTION selected>???&nbsp;
+<option>SUNDAY</option>
+<option>MONDAY</option>
+<option>TUESDAY</option>
+<option>WEDNESDAY</option>
+<option>THURSDAY</option>
+<option>FRIDAY</option>
+<option>SATURDAY</option>
+</SELECT></TD>
+      <TD><INPUT maxLength=3 size=3 name=5></TD></TR>
+    <TR>
+      <TD><B><font face="Ariya">VJ> KCTA ZSC</font></B></TD>
+      <TD><SELECT name=0><OPTION selected>???&nbsp;
+<option>SUNDAY</option>
+<option>MONDAY</option>
+<option>TUESDAY</option>
+<option>WEDNESDAY</option>
+<option>THURSDAY</option>
+<option>FRIDAY</option>
+<option>SATURDAY</option>
+
+</SELECT></TD>
+      <TD><INPUT maxLength=3 size=3 name=7></TD></TR>
+    <TR>
+      <TD><B><font face="Ariya">VJ> SÁTIDÈ</font></B></TD>
+      <TD><SELECT name=0><OPTION selected>???&nbsp;
+<option>SUNDAY</option>
+<option>MONDAY</option>
+<option>TUESDAY</option>
+<option>WEDNESDAY</option>
+<option>THURSDAY</option>
+<option>FRIDAY</option>
+<option>SATURDAY</option>
+</SELECT></TD>
+      <TD><INPUT maxLength=3 size=3 name=9></TD></TR>
+    <TR>
+      <TD><B><font face="Ariya">VJ> ÀÌKÚ</font></B></TD>
+      <TD><SELECT name=0><OPTION selected>???&nbsp;
+<option>SUNDAY</option>
+<option>MONDAY</option>
+<option>TUESDAY</option>
+<option>WEDNESDAY</option>
+<option>THURSDAY</option>
+<option>FRIDAY</option>
+<option>SATURDAY</option>
+</SELECT></TD>
+      <TD><INPUT maxLength=3 size=3 name=11></TD></TR>
+    <TR>
+      <TD><font face="Ariya"><B>VJ> KCRIN ZSC</B></font></TD>
+      <TD><SELECT name=0><OPTION selected>???&nbsp;
+<option>SUNDAY</option>
+<option>MONDAY</option>
+<option>TUESDAY</option>
+<option>WEDNESDAY</option>
+<option>THURSDAY</option>
+<option>FRIDAY</option>
+<option>SATURDAY</option>
+
+</SELECT></TD>
+      <TD><INPUT maxLength=3 size=3 name=13></TD></TR>
+</FORM>
+    <TR>
+      <TD>&nbsp;</TD>
+      <TD>
+        <P>
+        <FORM name=CheckForm>
+        <CENTER>Result:&nbsp;<INPUT maxLength=4 size=4 name=ScoreBox> 
+        <P><INPUT onclick=CheckAnswer() type=button value=Check></CENTER></FORM></P></TD></TR>
+   </table>
+  	  <UL></UL></ul></p>
+<TABLE cellSpacing=0 cellPadding=4 width="100%" border=0>
+    <tr bgcolor="#FFFFCC"> 
+    <td ><!-- #BeginLibraryItem "../Library/footer.lbi" --><font face="Verdana, Arial, Helvetica, sans-serif" size="2">&copy; African Studies 
+
+Institute, University of Georgia.</font><!-- #EndLibraryItem -->    </td>
+  </tr>
+</table>
+</TBODY></TABLE></CENTER></UL></BODY></HTML>

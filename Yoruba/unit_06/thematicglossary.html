@@ -1,0 +1,786 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Excel.Sheet>
+<meta name=Generator content="Microsoft Excel 11">
+<link rel=File-List href="unit6_files/filelist.xml">
+<link rel=Edit-Time-Data href="unit6_files/editdata.mso">
+<link rel=OLE-Object-Data href="unit6_files/oledata.mso">
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Vasu Renganathan</o:Author>
+  <o:LastAuthor>Vasu Renganathan</o:LastAuthor>
+  <o:Created>2004-11-19T03:36:48Z</o:Created>
+  <o:LastSaved>2004-11-19T03:47:49Z</o:LastSaved>
+  <o:Company>UPenn</o:Company>
+  <o:Version>11.5606</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<style>
+<!--table
+	{mso-displayed-decimal-separator:"\.";
+	mso-displayed-thousand-separator:"\,";}
+@page
+	{margin:1.0in .75in 1.0in .75in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;}
+tr
+	{mso-height-source:auto;}
+col
+	{mso-width-source:auto;}
+br
+	{mso-data-placement:same-cell;}
+.style0
+	{mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	white-space:nowrap;
+	mso-rotate:0;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	color:windowtext;
+	font-size:10.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Arial;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	border:none;
+	mso-protection:locked visible;
+	mso-style-name:Normal;
+	mso-style-id:0;}
+td
+	{mso-style-parent:style0;
+	padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:10.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Arial;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	border:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	mso-protection:locked visible;
+	white-space:nowrap;
+	mso-rotate:0;}
+.xl24
+	{mso-style-parent:style0;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	background:#CCFFFF;
+	mso-pattern:auto none;}
+.xl25
+	{mso-style-parent:style0;
+	font-size:14.0pt;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	background:silver;
+	mso-pattern:auto none;}
+.xl26
+	{mso-style-parent:style0;
+	font-family:Ariya;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	background:silver;
+	mso-pattern:auto none;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <x:ExcelWorkbook>
+  <x:ExcelWorksheets>
+   <x:ExcelWorksheet>
+    <x:Name>Sheet1</x:Name>
+    <x:WorksheetOptions>
+     <x:Print>
+      <x:ValidPrinterInfo/>
+      <x:HorizontalResolution>300</x:HorizontalResolution>
+      <x:VerticalResolution>300</x:VerticalResolution>
+     </x:Print>
+     <x:Selected/>
+     <x:Panes>
+      <x:Pane>
+       <x:Number>3</x:Number>
+       <x:ActiveRow>12</x:ActiveRow>
+       <x:ActiveCol>4</x:ActiveCol>
+      </x:Pane>
+     </x:Panes>
+     <x:ProtectContents>False</x:ProtectContents>
+     <x:ProtectObjects>False</x:ProtectObjects>
+     <x:ProtectScenarios>False</x:ProtectScenarios>
+    </x:WorksheetOptions>
+   </x:ExcelWorksheet>
+   <x:ExcelWorksheet>
+    <x:Name>Sheet2</x:Name>
+    <x:WorksheetOptions>
+     <x:ProtectContents>False</x:ProtectContents>
+     <x:ProtectObjects>False</x:ProtectObjects>
+     <x:ProtectScenarios>False</x:ProtectScenarios>
+    </x:WorksheetOptions>
+   </x:ExcelWorksheet>
+   <x:ExcelWorksheet>
+    <x:Name>Sheet3</x:Name>
+    <x:WorksheetOptions>
+     <x:ProtectContents>False</x:ProtectContents>
+     <x:ProtectObjects>False</x:ProtectObjects>
+     <x:ProtectScenarios>False</x:ProtectScenarios>
+    </x:WorksheetOptions>
+   </x:ExcelWorksheet>
+  </x:ExcelWorksheets>
+  <x:WindowHeight>8700</x:WindowHeight>
+  <x:WindowWidth>11355</x:WindowWidth>
+  <x:WindowTopX>480</x:WindowTopX>
+  <x:WindowTopY>120</x:WindowTopY>
+  <x:ProtectStructure>False</x:ProtectStructure>
+  <x:ProtectWindows>False</x:ProtectWindows>
+ </x:ExcelWorkbook>
+</xml><![endif]-->
+</head>
+
+<body link=blue vlink=purple>
+
+      <table border="0" cellpadding="4" cellspacing="0" width="100%">
+        <tr>
+          <td><img src="../media/images/yorubalogo.gif" width="201" height="87"></td>
+          <td>
+            <p align="right"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><a href="../index.html">Home<br>
+              </a></font><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><a href="../overview.html">Overview<br>
+              </a></font><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><a href="../techhelp.html">Technical
+              Help</a></font></p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" bgcolor="#CCCCFF"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"> <a href=../index.html>Home</a> &gt;&nbsp;<a href="../lessons.html">Select
+                a Unit</a> &gt; <b><a href="index.html">Unit 6: <font face="Ariya">AXV
+                W&Iacute;WZ &Agrave;TI OGE X&Iacute;XE</font></a></b></font></td>
+        </tr>
+      </table>
+      <div align="center"><strong>THEMATIC VOCABULARY FOR UNIT SIX:</span></strong><br>
+      </div>
+      <table x:str border=0 cellpadding=0 cellspacing=0 width=792 style='border-collapse:
+ collapse;table-layout:fixed;width:594pt'>
+ <col class=xl24 width=220 style='mso-width-source:userset;mso-width-alt:8045;
+ width:165pt'>
+ <col class=xl26 width=215 style='mso-width-source:userset;mso-width-alt:7862;
+ width:161pt'>
+ <col class=xl24 width=190 style='mso-width-source:userset;mso-width-alt:6948;
+ width:143pt'>
+ <col class=xl26 width=167 style='mso-width-source:userset;mso-width-alt:6107;
+ width:125pt'>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt' x:str="Black ">Black<span
+  style='mso-spacerun:yes'> </span></td>
+  <td class=xl26>Dúdú</td>
+  <td class=xl24>Traditional clothing</td>
+  <td class=xl26>Axv ìbíl|</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+  <td class=xl24>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>Blouse</td>
+  <td class=xl26>Bùbá</td>
+  <td class=xl24>White</td>
+  <td class=xl26>Àwz funfun</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+  <td class=xl24>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>Blue</td>
+  <td class=xl26>Búlúù</td>
+  <td class=xl24>Women’s clothing</td>
+  <td class=xl26>Axv obìnrin</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+  <td class=xl24>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>Body adornment</td>
+  <td class=xl26>Zx&lt; ara</td>
+  <td class=xl24>Wrapper</td>
+  <td class=xl26>Ìró</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+  <td class=xl24>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>Bra</td>
+  <td class=xl26>K&lt;s}|tì,búrà, bùrèsíà, k&lt;mú, k&lt;yàn</td>
+  <td class=xl24>Yellow</td>
+  <td class=xl26>Y}lò</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+  <td class=xl24>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>Cap</td>
+  <td class=xl26>Fìlà</td>
+  <td class=xl24>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+  <td class=xl24>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>Clothes</td>
+  <td class=xl26>Axv, |wù</td>
+  <td class=xl24>Ankle bracelet</td>
+  <td class=xl26>|qà cs|</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+  <td class=xl24>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>Coat (suit)</td>
+  <td class=xl26>Kóòtù, (súùtù)</td>
+  <td class=xl24>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+  <td class=xl24>Bag</td>
+  <td class=xl26>Àpò</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>Color</td>
+  <td class=xl26>Àwz</td>
+  <td class=xl24>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+  <td class=xl24>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>Dress</td>
+  <td class=xl26>Kaba</td>
+  <td class=xl24>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+  <td class=xl24>Beads</td>
+  <td class=xl26>Ìl|k|</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>Ear ring</td>
+  <td class=xl26>Ycrí etí, yaríìnì, yctí</td>
+  <td class=xl24>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+  <td class=xl24>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>Eye liner</td>
+  <td class=xl26>Tìróò</td>
+  <td class=xl24>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+  <td class=xl24 x:str="Belt ">Belt<span style='mso-spacerun:yes'> </span></td>
+  <td class=xl26>B}líìtì</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>Finger ring</td>
+  <td class=xl26>Òrùka, ríngì</td>
+  <td class=xl24>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+  <td class=xl24>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>Flowing robe</td>
+  <td class=xl26>Aqádá</td>
+  <td class=xl24>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+  <td class=xl24>Book bag</td>
+  <td class=xl26>Àpò ìwé</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>Green</td>
+  <td class=xl26>Àwz ewé</td>
+  <td class=xl24>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+  <td class=xl24>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>Hand woven ceremonial wear</td>
+  <td class=xl26>Axv òkè</td>
+  <td class=xl24>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+  <td class=xl24>Bracelet</td>
+  <td class=xl26>|qà</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>Head gear</td>
+  <td class=xl26>Gèlè</td>
+  <td class=xl24>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+  <td class=xl24 x:str="Button ">Button<span style='mso-spacerun:yes'> </span></td>
+  <td class=xl26>B&lt;tìnì</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>Lip stick</td>
+  <td class=xl26>Ìt&lt;tè</td>
+  <td class=xl24>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+  <td class=xl24 x:str="Cotton ">Cotton<span style='mso-spacerun:yes'> </span></td>
+  <td class=xl26>K&lt;tìnì</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>Men’s clothing</td>
+  <td class=xl26>Axv vkùnrin</td>
+  <td class=xl24>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+  <td class=xl24>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>Modern clothing</td>
+  <td class=xl26>Axv òde òní</td>
+  <td class=xl24>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+  <td class=xl24 x:str="Damask ">Damask<span style='mso-spacerun:yes'> </span></td>
+  <td class=xl26>Dàmáàsì</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>Orange</td>
+  <td class=xl26>Àwz olómi vsàn</td>
+  <td class=xl24>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+  <td class=xl24>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>Pant</td>
+  <td class=xl26>Xòkòtò</td>
+  <td class=xl24>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+  <td class=xl24>Embroidery (design)</td>
+  <td class=xl26>Ix} vnà</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>Panties</td>
+  <td class=xl26>Pátá, pántì</td>
+  <td class=xl24>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+  <td class=xl24>Glasses</td>
+  <td class=xl26>Ìgò ojú</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>Personal hygiene</td>
+  <td class=xl26>Ìt&lt;jú ara</td>
+  <td class=xl24>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+  <td class=xl24>Gloves</td>
+  <td class=xl26>Ìbvw&lt;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>Powder</td>
+  <td class=xl26>Àtíkè, páúdà</td>
+  <td class=xl24>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+  <td class=xl24>Jacket</td>
+  <td class=xl26>Ják||tì</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>Red</td>
+  <td class=xl26>Pupa</td>
+  <td class=xl24>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+  <td class=xl24>Jeans</td>
+  <td class=xl26>Jínsì</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>Scarf</td>
+  <td class=xl26>Síkáàfù</td>
+  <td class=xl24>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+  <td class=xl24>Jewelry</td>
+  <td class=xl26>Xéènì</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>Shawl</td>
+  <td class=xl26>Ìborùn</td>
+  <td class=xl24>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+  <td class=xl24>Navel ring</td>
+  <td class=xl26>Òrùka ìdodo</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>Shirt</td>
+  <td class=xl26>X}|tì</td>
+  <td class=xl24>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+  <td class=xl24>Pajamas</td>
+  <td class=xl26>Axv àwzsùn</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>Skirt</td>
+  <td class=xl26>Sík}|tì</td>
+  <td class=xl24>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+  <td class=xl24>Perfume (cologne)</td>
+  <td class=xl26>L&lt;fíndà</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>Slip (chemise)</td>
+  <td class=xl26>Àqék&lt;, ximí</td>
+  <td class=xl24>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+  <td class=xl24>Purse</td>
+  <td class=xl26>P&lt;zsì, àpò àpam&lt;w&lt;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>Socks (leggings,
+  stockings,hosiery)</td>
+  <td class=xl26>Ìbzs|</td>
+  <td class=xl24>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+  <td class=xl24>Rain coat</td>
+  <td class=xl26>Axv òjò</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>Sweater</td>
+  <td class=xl26>Súw}tà</td>
+  <td class=xl24>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+  <td class=xl24>School uniform</td>
+  <td class=xl26>Axv ilé ìwé</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>To braid hair</td>
+  <td class=xl26>Di irun</td>
+  <td class=xl24>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+  <td class=xl24>Shoes (boots)</td>
+  <td class=xl26>Bàtà (Búùtù)</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>To brush teeth</td>
+  <td class=xl26>Fv eyín</td>
+  <td class=xl24>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+  <td class=xl24>Shorts</td>
+  <td class=xl26>Xòkòtò kékeré</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>To cut hair</td>
+  <td class=xl26>Gé irun</td>
+  <td class=xl24>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+  <td class=xl24>Silk</td>
+  <td class=xl26>Sílíìkì</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>To cut nails</td>
+  <td class=xl26>Gé èékáná</td>
+  <td class=xl24>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+  <td class=xl24>Slippers (sanders)</td>
+  <td class=xl26>Sílípáàsì (sálúbàtà)</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>To hang</td>
+  <td class=xl26>K&lt;</td>
+  <td class=xl24>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+  <td class=xl24>Sweats</td>
+  <td class=xl26>Axv eré ìdárayá</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>To put on (cap)</td>
+  <td class=xl26>Dé</td>
+  <td class=xl24>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+  <td class=xl24>Sweat pant</td>
+  <td class=xl26>Xòkòtò eré ìdárayá</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>To put on (head gear, scarf)</td>
+  <td class=xl26>Wé</td>
+  <td class=xl24>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+  <td class=xl24>Tailor</td>
+  <td class=xl26>Télz, aránxv</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>To remove</td>
+  <td class=xl26>B&lt;</td>
+  <td class=xl24>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+  <td class=xl24>Tie</td>
+  <td class=xl26>Táì</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>To shave</td>
+  <td class=xl26>Fá</td>
+  <td class=xl24>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+  <td class=xl24>Toe ring</td>
+  <td class=xl26>Òrùka cs|</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>To take a bath</td>
+  <td class=xl26>W|</td>
+  <td class=xl24>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+  <td class=xl24>Towel</td>
+  <td class=xl26>Táw|lì, axv ìnura</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>To tie</td>
+  <td class=xl26>Ró</td>
+  <td class=xl24>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+  <td class=xl24>Umbrella</td>
+  <td class=xl26>Abùradà, aqòjò(aqòòrùn)</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>To wear</td>
+  <td class=xl26 x:str="Wz ">Wz<span style='mso-spacerun:yes'> </span></td>
+  <td class=xl24>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+  <td class=xl24>Underwear (undershirt, single<span style='display:none'>t)</span></td>
+  <td class=xl26>Àwzt}l|</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+  <td class=xl24>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+  <td class=xl24>Uniform</td>
+  <td class=xl26>Axv ix}</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+  <td class=xl24>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+  <td class=xl24>Wallet</td>
+  <td class=xl26>W&lt;l}|tì</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+  <td class=xl24>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+  <td class=xl24>Wrist watch</td>
+  <td class=xl26>Aago vw&lt;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+  <td class=xl24>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>&nbsp;</td>
+  <td class=xl26>&nbsp;</td>
+  <td class=xl24>Wool</td>
+  <td class=xl26>Wúùlù, òwú</td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+  <td width=220 style='width:165pt'></td>
+  <td width=215 style='width:161pt'></td>
+  <td width=190 style='width:143pt'></td>
+  <td width=167 style='width:125pt'></td>
+ </tr>
+ <![endif]>
+</table>
+
+</body>
+
+</html>

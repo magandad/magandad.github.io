@@ -1,0 +1,257 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<HTML><HEAD><TITLE>Unit 11: Diagnostic test</TITLE>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"></HEAD>
+<BODY bgColor=#ffffff leftMargin=0 topMargin=0 marginheight="0" marginwidth="0">
+<TABLE cellSpacing=0 cellPadding=4 width="100%" border=0>
+  <TBODY>
+  <tr> 
+    <td bgcolor="#FFFFFF"><img src="../media/images/yorubalogo.gif" width="201" height="87"</td>
+    <td bgcolor="#FFFFFF"> 
+      <p align="right"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><a href="../index.html">Home<br>
+        </a><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><a href="../overview.html">Overview<br>
+        </a><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><a href="../techHelp.html">Technical 
+        Help</a></p>
+    </td>
+  </tr>
+<tr> 
+    <td colspan="2" bgcolor="#CCCCFF"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"> 
+      <a href=../index.html>Home</a> &gt;&nbsp;<a href="../lessons.html">Select
+      a Unit</a> &gt; <b><a href="../index.html">Unit
+      11: </a><a href="index.html">&Igrave;GB&Agrave; &Agrave;TI &Agrave;K&Oacute;K&Ograve;</a></b></font></td>
+  </tr>
+</TABLE>
+<SCRIPT language=JavaScript>
+
+CorrectAnswers = new Array();
+
+CorrectAnswers[0]=3;
+CorrectAnswers[1]=5;
+CorrectAnswers[2]=7;
+CorrectAnswers[3]=8;
+CorrectAnswers[4]=9;
+CorrectAnswers[5]=10;
+CorrectAnswers[6]=2;
+CorrectAnswers[7]=1;
+CorrectAnswers[8]=6;
+CorrectAnswers[9]=4;
+
+
+
+macrightchar=':-)';
+macwrongchar='X';
+winrightchar=':-)';
+winwrongchar='X';
+
+
+var platform = 'win'
+if (navigator.appVersion.indexOf('Mac') != -1) {platform = 'mac'}
+if (platform == 'mac') {
+	rightchar = unescape(macrightchar)
+	wrongchar = unescape(macwrongchar)
+}
+else {
+	rightchar = unescape(winrightchar)
+	wrongchar = unescape(winwrongchar)
+}
+
+function CheckAnswer(){
+
+	var i = 0;
+	var TotalCorrect = 0;
+	var x = 0;
+	var Score = 0;
+
+	for (i=0; i<CorrectAnswers.length; i++){
+		if (document.QuizForm.elements[i*2].selectedIndex == CorrectAnswers[i]){
+			document.QuizForm.elements[(i*2)+1].value = rightchar;
+			TotalCorrect++;
+		}
+		else{
+			document.QuizForm.elements[(i*2)+1].value = wrongchar;
+		}
+	}
+	Score = Math.floor((TotalCorrect*100)/CorrectAnswers.length);
+	document.CheckForm.ScoreBox.value = Score + '%';
+}
+
+
+</SCRIPT>
+<blockquote>
+  <blockquote>
+    <p><strong><font size="3" face="Verdana, Arial, Helvetica, sans-serif">ANSWER ALL QUESTIONS
+    </font> </strong></p>
+  </blockquote>
+</blockquote>
+<form name="form1" method="post" action="">
+<table width="83%" border="1" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td colspan="4"><font size="3" face="Ariya"><strong>1.	K&iacute; ni o m&aacute;a
+        n xe n&iacute; &ograve;pin zs|? X&agrave;p&egrave;j&uacute;we &agrave;wvn
+        nnkan m&eacute;j&igrave; t&iacute; o m&aacute;a n xe n&iacute; &agrave;&aacute;rz,
+        zs&aacute;n &agrave;ti &igrave;rzl} n&iacute; vjvvj&lt; &agrave;b&aacute;m}ta &agrave;ti
+        vj&lt; &agrave;&igrave;k&uacute;</strong><font face="Verdana, Arial, Helvetica, sans-serif"><strong> (What do you usually do over the weekend?
+        Describe two activities that you do in the morning, afternoon and evening
+      every Saturday and Sunday.)</strong></font></font><strong><font face="Verdana, Arial, Helvetica, sans-serif"> </font></strong></td>
+  </tr>
+  <tr>
+    <td colspan="4">&nbsp;</td>
+    </tr>
+  <tr>
+    <td colspan="4"><textarea name="textarea3" cols="75" rows="15" wrap="VIRTUAL"></textarea></td>
+    </tr>
+  <tr bgcolor="#999999">
+    <td height="21" colspan="4">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="40" colspan="4"><font face="Ariya"><strong>2.	Kv or&uacute;kv &agrave;wvn
+        vj&lt; zs| n&iacute; &egrave;de Yor&ugrave;b&aacute; (Write the days
+      of the week in Yoruba)</strong></font><strong> </strong></td>
+  </tr>
+  <tr>
+    <td width="8%">&nbsp;</td>
+    <td width="22%">&nbsp;</td>
+    <td width="35%"><font face="Ariya">&nbsp;</font></td>
+    <td width="35%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><strong>Sunday</strong></td>
+    <td><font face="Ariya">&nbsp;
+      <input name="textfield" type="text" size="45">
+    </font></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><strong>Monday</strong></td>
+    <td><font face="Ariya">&nbsp;
+      <input name="textfield2" type="text" size="45">
+    </font></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><strong>Tuesday</strong></td>
+    <td><font face="Ariya">&nbsp;
+      <input name="textfield3" type="text" size="45">
+    </font></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><strong>Wednesday</strong></td>
+    <td><font face="Ariya">&nbsp;
+      <input name="textfield4" type="text" size="45">
+    </font></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><strong>Thursday</strong></td>
+    <td><font face="Ariya">&nbsp;
+      <input name="textfield5" type="text" size="45">
+    </font></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><strong>Friady</strong></td>
+    <td><font face="Ariya">&nbsp;
+      <input name="textfield6" type="text" size="45">
+    </font></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><strong>Saturday</strong></td>
+    <td><font face="Ariya">&nbsp; 
+      <input name="textfield62" type="text" size="45">
+      </font></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr bgcolor="#999999">
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr bgcolor="#999999">
+    <td colspan="4" bgcolor="#FFFFFF"><strong>3.	<font face="Ariya">K&iacute; ni or&uacute;kv &agrave;wvn
+      ox&ugrave; wzny&iacute; n&iacute; &egrave;de Yor&ugrave;b&aacute;?</font> (What
+      are these months in Yoruba?)</strong></td>
+    </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><font face="Ariya">&nbsp;
+          <input name="textfield" type="text" size="45">
+    </font></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><strong>September</strong></td>
+    <td><font face="Ariya">&nbsp;
+          <input name="textfield" type="text" size="45">
+    </font></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><strong>April</strong></td>
+    <td><font face="Ariya">&nbsp;
+          <input name="textfield" type="text" size="45">
+    </font></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><strong>August</strong></td>
+    <td><font face="Ariya">&nbsp;
+          <input name="textfield" type="text" size="45">
+    </font></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><strong>October</strong></td>
+    <td><font face="Ariya">&nbsp;
+          <input name="textfield" type="text" size="45">
+    </font></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="39">&nbsp;</td>
+    <td><strong>February</strong></td>
+    <td><font face="Ariya">&nbsp;
+          <input name="textfield" type="text" size="45">
+    </font></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr bgcolor="#999999">
+    <td colspan="4">&nbsp;</td>
+    </tr>
+  <tr>
+    <td colspan="4"><strong>4. Write a paragraph about your best season and worst season
+      of the year.
+    </strong>      <p></p></td>
+  </tr>
+  <tr>
+    <td colspan="4"><textarea name="textarea" cols="75" rows="15" wrap="VIRTUAL"></textarea></td>
+  </tr>
+  <tr>
+    <td colspan="4" bgcolor="#999999">&nbsp;</td>
+    </tr>
+</table>
+</form>
+<br>
+<TABLE cellSpacing=0 cellPadding=4 width="100%" border=0>
+    <tr bgcolor="#FFFFCC"> 
+    <td ><!-- #BeginLibraryItem "../Library/footer.lbi" --><font face="Verdana, Arial, Helvetica, sans-serif" size="2">&copy; African Studies 
+
+Institute, University of Georgia.</font><!-- #EndLibraryItem -->    </td>
+  </tr>
+</table>
+</TBODY></TABLE></UL>
+</BODY></HTML>

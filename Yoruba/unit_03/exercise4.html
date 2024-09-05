@@ -1,0 +1,245 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<HTML><HEAD><TITLE>Unit 3: Exercise 5</TITLE>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"></HEAD>
+<BODY bgColor=#ffffff leftMargin=0 topMargin=0 marginheight="0" marginwidth="0">
+<TABLE cellSpacing=0 cellPadding=4 width="100%" border=0>
+  <TBODY>
+  <tr> 
+    <td bgcolor="#FFFFFF"><img src="../media/images/yorubalogo.gif" width="201" height="87"</td>
+    <td bgcolor="#FFFFFF"> 
+      <p align="right"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><a href="../index.html">Home<br>
+        </a><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><a href="../overview.html">Overview<br>
+        </a><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><a href="../techHelp.html">Technical 
+        Help</a></p>
+    </td>
+  </tr>
+<tr> 
+    <td bgcolor="#CCCCFF"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><a href="../index.html">Home</a></font><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><A HREF="../lessons.html">Select
+         Unit </A> &gt; <A HREF="index.html">
+		 Unit 3: <font face="Ariya"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>N&Iacute;N<font face="Ariya">&Iacute; CB&Iacute; </font></b></font></font><font face="Ariya"></i></font></A> 
+      <b>Exercise 4 </td>
+
+    <td bgcolor="#CCCCFF">&nbsp;</td>
+  </tr>
+</TBODY></TABLE>
+<div align="center">
+  <SCRIPT language=JavaScript>
+
+CorrectAnswers = new Array();
+
+CorrectAnswers[0]=8;
+CorrectAnswers[1]=9;
+CorrectAnswers[2]=1;
+CorrectAnswers[3]=4;
+CorrectAnswers[4]=6;
+CorrectAnswers[5]=3;
+CorrectAnswers[6]=7;
+CorrectAnswers[7]=5;
+CorrectAnswers[8]=2;
+
+
+
+macrightchar=':-)';
+macwrongchar='X';
+winrightchar=':-)';
+winwrongchar='X';
+
+
+var platform = 'win'
+if (navigator.appVersion.indexOf('Mac') != -1) {platform = 'mac'}
+if (platform == 'mac') {
+	rightchar = unescape(macrightchar)
+	wrongchar = unescape(macwrongchar)
+}
+else {
+	rightchar = unescape(winrightchar)
+	wrongchar = unescape(winwrongchar)
+}
+
+function CheckAnswer(){
+
+	var i = 0;
+	var TotalCorrect = 0;
+	var x = 0;
+	var Score = 0;
+
+	for (i=0; i<CorrectAnswers.length; i++){
+		if (document.QuizForm.elements[i*2].selectedIndex == CorrectAnswers[i]){
+			document.QuizForm.elements[(i*2)+1].value = rightchar;
+			TotalCorrect++;
+		}
+		else{
+			document.QuizForm.elements[(i*2)+1].value = wrongchar;
+		}
+	}
+	Score = Math.floor((TotalCorrect*100)/CorrectAnswers.length);
+	document.CheckForm.ScoreBox.value = Score + '%';
+}
+
+
+</SCRIPT>
+  <img src="familytree.gif" width="558" height="378">
+</div>
+<FORM name=QuizForm method=get>
+<UL>
+  <CENTER>
+  <TABLE cellPadding=5 width="100%" border=0>
+    <TBODY>
+    <TR>
+      <TD width="30%">&nbsp;</TD>
+      <TD width="30%"><B>Match</B></TD>
+      <TD></TD></TR>
+    <TR>
+      <TD><B><font face="Ariya">Àbúrò obìnrin</font></B></TD>
+      <TD><SELECT name=0><OPTION selected>???&nbsp;
+
+<option>Father</option>
+<option>Paternal Grandfather & Grandmother</option>
+<option>Mother’s older sister</option>
+<option>Younger brother</option>
+<option>Maternal Grandfather & Grandmother</option>
+<option>Mother</option>
+<option>Father’s younger brother</option>
+<option>Younger sister</option>
+<option>Older sibiling</option>
+
+</SELECT></TD>
+      <TD><INPUT maxLength=3 size=3 name=1></TD></TR>
+    <TR>
+      <TD><B><font face="Ariya">Cgb&lt;n</font></B></TD>
+      <TD><SELECT name=0><OPTION selected>???&nbsp;
+<option>Father</option>
+<option>Paternal Grandfather & Grandmother</option>
+<option>Mother’s older sister</option>
+<option>Younger brother</option>
+<option>Maternal Grandfather & Grandmother</option>
+<option>Mother</option>
+<option>Father’s younger brother</option>
+<option>Younger sister</option>
+<option>Older sibiling</option>
+
+
+</SELECT></TD>
+      <TD><INPUT maxLength=3 size=3 name=3></TD></TR>
+    <TR>
+      <TD><B><font face="Ariya">Bàbá</font></B></TD>
+      <TD><SELECT name=0><OPTION selected>???&nbsp;
+<option>Father</option>
+<option>Paternal Grandfather & Grandmother</option>
+<option>Mother’s older sister</option>
+<option>Younger brother</option>
+<option>Maternal Grandfather & Grandmother</option>
+<option>Mother</option>
+<option>Father’s younger brother</option>
+<option>Younger sister</option>
+<option>Older sibiling</option>
+</SELECT></TD>
+      <TD><INPUT maxLength=3 size=3 name=5></TD></TR>
+    <TR>
+      <TD><B><font face="Ariya">Àbúrò vkùnrin</font></B></TD>
+      <TD><SELECT name=0><OPTION selected>???&nbsp;
+<option>Father</option>
+<option>Paternal Grandfather & Grandmother</option>
+<option>Mother’s older sister</option>
+<option>Younger brother</option>
+<option>Maternal Grandfather & Grandmother</option>
+<option>Mother</option>
+<option>Father’s younger brother</option>
+<option>Younger sister</option>
+<option>Older sibiling</option>
+
+</SELECT></TD>
+      <TD><INPUT maxLength=3 size=3 name=7></TD></TR>
+    <TR>
+      <TD><B><font face="Ariya">Màmá</font></B></TD>
+      <TD><SELECT name=0><OPTION selected>???&nbsp;
+<option>Father</option>
+<option>Paternal Grandfather & Grandmother</option>
+<option>Mother’s older sister</option>
+<option>Younger brother</option>
+<option>Maternal Grandfather & Grandmother</option>
+<option>Mother</option>
+<option>Father’s younger brother</option>
+<option>Younger sister</option>
+<option>Older sibiling</option>
+
+</SELECT></TD>
+      <TD><INPUT maxLength=3 size=3 name=9></TD></TR>
+    <TR>
+      <TD><B><font face="Ariya">Cgbvn màmá obìnrin</font></B></TD>
+      <TD><SELECT name=0><OPTION selected>???&nbsp;
+<option>Father</option>
+<option>Paternal Grandfather & Grandmother</option>
+<option>Mother’s older sister</option>
+<option>Younger brother</option>
+<option>Maternal Grandfather & Grandmother</option>
+<option>Mother</option>
+<option>Father’s younger brother</option>
+<option>Younger sister</option>
+<option>Older sibiling</option>
+
+</SELECT></TD>
+      <TD><INPUT maxLength=3 size=3 name=11></TD></TR>
+    <TR>
+      <TD><B><font face="Ariya">Àbúrò bàbá vkùnrin</font></B></TD>
+      <TD><SELECT name=0><OPTION selected>???&nbsp;
+<option>Father</option>
+<option>Paternal Grandfather & Grandmother</option>
+<option>Mother’s older sister</option>
+<option>Younger brother</option>
+<option>Maternal Grandfather & Grandmother</option>
+<option>Mother</option>
+<option>Father’s younger brother</option>
+<option>Younger sister</option>
+<option>Older sibiling</option>
+</SELECT></TD>
+      <TD><INPUT maxLength=3 size=3 name=13></TD></TR>
+    <TR>
+      <TD><font face="Ariya"><B>Bàba màmá àti Màma mama</B></font></TD>
+      <TD><SELECT name=0><OPTION selected>???&nbsp;
+<option>Father</option>
+<option>Paternal Grandfather & Grandmother</option>
+<option>Mother’s older sister</option>
+<option>Younger brother</option>
+<option>Maternal Grandfather & Grandmother</option>
+<option>Mother</option>
+<option>Father’s younger brother</option>
+<option>Younger sister</option>
+<option>Older sibiling</option>
+</SELECT></TD>
+      <TD><INPUT maxLength=3 size=3 name=15></TD></TR>
+    <TR>
+      <TD><B><font face="Ariya">Bàba bàbá àti Màma bàbá</font></B></TD>
+      <TD><SELECT name=0><OPTION selected>???&nbsp;
+<option>Father</option>
+<option>Paternal Grandfather & Grandmother</option>
+<option>Mother’s older sister</option>
+<option>Younger brother</option>
+<option>Maternal Grandfather & Grandmother</option>
+<option>Mother</option>
+<option>Father’s younger brother</option>
+<option>Younger sister</option>
+<option>Older sibiling</option>
+</SELECT></TD>
+      <TD><INPUT maxLength=3 size=3 name=17></TD></TR>
+
+
+</FORM>
+    <TR>
+      <TD>&nbsp;</TD>
+      <TD>
+        <P>
+        <FORM name=CheckForm>
+        <CENTER>Result:&nbsp;<INPUT maxLength=4 size=4 name=ScoreBox> 
+        <P><INPUT onclick=CheckAnswer() type=button value=Check></CENTER></FORM></P></TD></TR>
+   </table>
+  	  <UL></UL></ul></p>
+<TABLE cellSpacing=0 cellPadding=4 width="100%" border=0>
+    <tr bgcolor="#FFFFCC"> 
+    <td ><!-- #BeginLibraryItem "../Library/footer.lbi" --><font face="Verdana, Arial, Helvetica, sans-serif" size="2">&copy; African Studies 
+
+Institute, University of Georgia.</font><!-- #EndLibraryItem -->    </td>
+  </tr>
+</table>
+</TBODY></TABLE></CENTER></UL></BODY></HTML>

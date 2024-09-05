@@ -1,0 +1,282 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<HTML><HEAD><TITLE>Unit 3: Exercise 2</TITLE>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"></HEAD>
+<BODY bgColor=#ffffff leftMargin=0 topMargin=0 marginheight="0" marginwidth="0">
+<TABLE cellSpacing=0 cellPadding=4 width="100%" border=0>
+  <TBODY>
+  <tr> 
+    <td bgcolor="#FFFFFF"><img src="../media/images/yorubalogo.gif" width="201" height="87"</td>
+    <td bgcolor="#FFFFFF"> 
+      <p align="right"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><a href="../index.html">Home<br>
+        </a><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><a href="../overview.html">Overview<br>
+        </a><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><a href="../techHelp.html">Technical 
+        Help</a></p>
+    </td>
+  </tr>
+<tr> 
+    <td bgcolor="#CCCCFF"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><a href="../index.html">Home</a></font>&gt;<A HREF="../lessons.html">Select
+         Unit </A> &gt; <a href=index.html>Unit 3: <font face="Ariya" size="2"><b>N&Iacute;N&Iacute; CB&Iacute;</b></font> </a> 
+      &gt;Exercise 2</td>
+
+    <td bgcolor="#CCCCFF">&nbsp;</td>
+  </tr>
+</TBODY></TABLE>
+<SCRIPT language=JavaScript>
+
+CorrectAnswers = new Array();
+
+CorrectAnswers[0]=10;
+CorrectAnswers[1]=8;
+CorrectAnswers[2]=6;
+CorrectAnswers[3]=4;
+CorrectAnswers[4]=2;
+CorrectAnswers[5]=1;
+CorrectAnswers[6]=3;
+
+CorrectAnswers[7]=5;
+CorrectAnswers[8]=7;
+CorrectAnswers[9]=9;
+
+
+
+macrightchar=':-)';
+macwrongchar='X';
+winrightchar=':-)';
+winwrongchar='X';
+
+
+var platform = 'win'
+if (navigator.appVersion.indexOf('Mac') != -1) {platform = 'mac'}
+if (platform == 'mac') {
+	rightchar = unescape(macrightchar)
+	wrongchar = unescape(macwrongchar)
+}
+else {
+	rightchar = unescape(winrightchar)
+	wrongchar = unescape(winwrongchar)
+}
+
+function CheckAnswer(){
+
+	var i = 0;
+	var TotalCorrect = 0;
+	var x = 0;
+	var Score = 0;
+
+	for (i=0; i<CorrectAnswers.length; i++){
+		if (document.QuizForm.elements[i*2].selectedIndex == CorrectAnswers[i]){
+			document.QuizForm.elements[(i*2)+1].value = rightchar;
+			TotalCorrect++;
+		}
+		else{
+			document.QuizForm.elements[(i*2)+1].value = wrongchar;
+		}
+	}
+	Score = Math.floor((TotalCorrect*100)/CorrectAnswers.length);
+	document.CheckForm.ScoreBox.value = Score + '%';
+}
+
+
+</SCRIPT>
+
+<P>
+<FORM name=QuizForm method=get>
+<UL>
+<B>Match the right word in English</B>
+  <CENTER>
+  <TABLE cellPadding=5 width="100%" border=0>
+    <TBODY>
+    <TR>
+	
+      <TD width="30%">&nbsp;</TD>
+      <TD width="30%"><B>Match</B></TD>
+      <TD></TD></TR>
+    <TR>
+      <TD><B><font face="Ariya">|gb&lt;n</font></B></TD>
+      <TD><SELECT name=0><OPTION selected>???&nbsp;
+<option>Family</option>
+<option>Father</option>
+<option>Mother</option>
+<option>Wife</option>
+<option>Younger Sibling</option>
+<option>Child</option>
+<option>Boy</option>
+<option>Girl</option>
+<option>Friend</option>
+<option>Older Sibling</option>
+
+
+</SELECT></TD>
+      <TD><INPUT maxLength=3 size=3 name=1></TD></TR>
+    <TR>
+      <TD><B><font face="Ariya">obìnrin</font></B></TD>
+      <TD><SELECT name=0><OPTION selected>???&nbsp;
+<option>Family</option>
+<option>Father</option>
+<option>Mother</option>
+<option>Wife</option>
+<option>Younger Sibling</option>
+<option>Child</option>
+<option>Boy</option>
+<option>Girl</option>
+<option>Friend</option>
+<option>Older Sibling</option>
+
+
+
+</SELECT></TD>
+      <TD><INPUT maxLength=3 size=3 name=3></TD></TR>
+    <TR>
+      <TD><B><font face="Ariya">vmv</font></B></TD>
+      <TD><SELECT name=0><OPTION selected>???&nbsp;
+<option>Family</option>
+<option>Father</option>
+<option>Mother</option>
+<option>Wife</option>
+<option>Younger Sibling</option>
+<option>Child</option>
+<option>Boy</option>
+<option>Girl</option>
+<option>Friend</option>
+<option>Older Sibling</option>
+
+</SELECT></TD>
+      <TD><INPUT maxLength=3 size=3 name=5></TD></TR>
+    <TR>
+      <TD><B><font face="Ariya">ìyàwó</font></B></TD>
+      <TD><SELECT name=0><OPTION selected>???&nbsp;
+<option>Family</option>
+<option>Father</option>
+<option>Mother</option>
+<option>Wife</option>
+<option>Younger Sibling</option>
+<option>Child</option>
+<option>Boy</option>
+<option>Girl</option>
+<option>Friend</option>
+<option>Older Sibling</option>
+
+
+</SELECT></TD>
+      <TD><INPUT maxLength=3 size=3 name=7></TD></TR>
+    <TR>
+      <TD><B><font face="Ariya">bàbá</font></B></TD>
+      <TD><SELECT name=0><OPTION selected>???&nbsp;
+<option>Family</option>
+<option>Father</option>
+<option>Mother</option>
+<option>Wife</option>
+<option>Younger Sibling</option>
+<option>Child</option>
+<option>Boy</option>
+<option>Girl</option>
+<option>Friend</option>
+<option>Older Sibling</option>
+
+
+</SELECT></TD>
+      <TD><INPUT maxLength=3 size=3 name=9></TD></TR>
+    <TR>
+      <TD><B><font face="Ariya">cbí</font></B></TD>
+      <TD><SELECT name=0><OPTION selected>???&nbsp;
+<option>Family</option>
+<option>Father</option>
+<option>Mother</option>
+<option>Wife</option>
+<option>Younger Sibling</option>
+<option>Child</option>
+<option>Boy</option>
+<option>Girl</option>
+<option>Friend</option>
+<option>Older Sibling</option>
+
+
+</SELECT></TD>
+      <TD><INPUT maxLength=3 size=3 name=11></TD></TR>
+    <TR>
+      <TD><B><font face="Ariya">màma</font></B></TD>
+      <TD><SELECT name=0><OPTION selected>???&nbsp;
+<option>Family</option>
+<option>Father</option>
+<option>Mother</option>
+<option>Wife</option>
+<option>Younger Sibling</option>
+<option>Child</option>
+<option>Boy</option>
+<option>Girl</option>
+<option>Friend</option>
+<option>Older Sibling</option>
+
+
+</SELECT></TD>
+      <TD><INPUT maxLength=3 size=3 name=13></TD></TR>
+    <TR>
+      <TD><font face="Ariya"><B>àbúrò</B></font></TD>
+      <TD><SELECT name=0><OPTION selected>???&nbsp;
+<option>Family</option>
+<option>Father</option>
+<option>Mother</option>
+<option>Wife</option>
+<option>Younger Sibling</option>
+<option>Child</option>
+<option>Boy</option>
+<option>Girl</option>
+<option>Friend</option>
+<option>Older Sibling</option>
+
+
+</SELECT></TD>
+      <TD><INPUT maxLength=3 size=3 name=15></TD></TR>
+    <TR>
+      <TD><B><font face="Ariya">vkùnrin</font></B></TD>
+      <TD><SELECT name=0><OPTION selected>???&nbsp;
+<option>Family</option>
+<option>Father</option>
+<option>Mother</option>
+<option>Wife</option>
+<option>Younger Sibling</option>
+<option>Child</option>
+<option>Boy</option>
+<option>Girl</option>
+<option>Friend</option>
+<option>Older Sibling</option>
+
+</SELECT></TD>
+      <TD><INPUT maxLength=3 size=3 name=17></TD></TR>
+
+<TR>
+      <TD><B><font face="Ariya">zr}</font></B></TD>
+      <TD><SELECT name=0><OPTION selected>???&nbsp;
+<option>Family</option>
+<option>Father</option>
+<option>Mother</option>
+<option>Wife</option>
+<option>Younger Sibling</option>
+<option>Child</option>
+<option>Boy</option>
+<option>Girl</option>
+<option>Friend</option>
+<option>Older Sibling</option>
+
+</SELECT></TD>
+      <TD><INPUT maxLength=3 size=3 name=19></TD></TR>
+
+</FORM>
+    <TR>
+      <TD>&nbsp;</TD>
+      <TD>
+        <P>
+        <FORM name=CheckForm>
+        <CENTER>Result:&nbsp;<INPUT maxLength=4 size=4 name=ScoreBox> 
+        <P><INPUT onclick=CheckAnswer() type=button value=Check></CENTER></FORM></P></TD></TR>
+   </table>
+  	  <UL></UL></ul></p>
+<TABLE cellSpacing=0 cellPadding=4 width="100%" border=0>
+    <tr bgcolor="#FFFFCC"> 
+    <td ><!-- #BeginLibraryItem "../Library/footer.lbi" --><font face="Verdana, Arial, Helvetica, sans-serif" size="2">&copy; African Studies 
+
+Institute, University of Georgia.</font><!-- #EndLibraryItem -->    </td>
+  </tr>
+</table>
+</TBODY></TABLE></CENTER></UL></BODY></HTML>

@@ -1,0 +1,168 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<HTML><HEAD><TITLE>Unit 5: Diagnostic test</TITLE>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"></HEAD>
+<BODY bgColor=#ffffff leftMargin=0 topMargin=0 marginheight="0" marginwidth="0">
+<TABLE cellSpacing=0 cellPadding=4 width="100%" border=0>
+  <TBODY>
+  <tr> 
+    <td bgcolor="#FFFFFF"><img src="../media/images/yorubalogo.gif" width="201" height="87"</td>
+    <td bgcolor="#FFFFFF"> 
+      <p align="right"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><a href="../index.html">Home<br>
+        </a><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><a href="../overview.html">Overview<br>
+        </a><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><a href="../techHelp.html">Technical 
+        Help</a></p>
+    </td>
+  </tr>
+<tr> 
+    <td colspan="2" bgcolor="#CCCCFF"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"> 
+      <a href=../index.html>Home</a> &gt;&nbsp;<a href="../lessons.html">Select
+      a Unit</a> &gt; <b><a href="index.html">Unit
+      5:R&Iacute;R&Agrave; &Agrave;TI T&Iacute;T&Agrave; </a></b></font></td>
+  </tr>
+</TABLE>
+<SCRIPT language=JavaScript>
+
+CorrectAnswers = new Array();
+
+CorrectAnswers[0]=3;
+CorrectAnswers[1]=5;
+CorrectAnswers[2]=7;
+CorrectAnswers[3]=8;
+CorrectAnswers[4]=9;
+CorrectAnswers[5]=10;
+CorrectAnswers[6]=2;
+CorrectAnswers[7]=1;
+CorrectAnswers[8]=6;
+CorrectAnswers[9]=4;
+
+
+
+macrightchar=':-)';
+macwrongchar='X';
+winrightchar=':-)';
+winwrongchar='X';
+
+
+var platform = 'win'
+if (navigator.appVersion.indexOf('Mac') != -1) {platform = 'mac'}
+if (platform == 'mac') {
+	rightchar = unescape(macrightchar)
+	wrongchar = unescape(macwrongchar)
+}
+else {
+	rightchar = unescape(winrightchar)
+	wrongchar = unescape(winwrongchar)
+}
+
+function CheckAnswer(){
+
+	var i = 0;
+	var TotalCorrect = 0;
+	var x = 0;
+	var Score = 0;
+
+	for (i=0; i<CorrectAnswers.length; i++){
+		if (document.QuizForm.elements[i*2].selectedIndex == CorrectAnswers[i]){
+			document.QuizForm.elements[(i*2)+1].value = rightchar;
+			TotalCorrect++;
+		}
+		else{
+			document.QuizForm.elements[(i*2)+1].value = wrongchar;
+		}
+	}
+	Score = Math.floor((TotalCorrect*100)/CorrectAnswers.length);
+	document.CheckForm.ScoreBox.value = Score + '%';
+}
+
+
+</SCRIPT>
+<blockquote>
+  <blockquote>
+    <p><strong><font size="3" face="Verdana, Arial, Helvetica, sans-serif">ANSWER ALL QUESTIONS
+    </font> </strong></p>
+  </blockquote>
+</blockquote>
+<form name="form1" method="post" action="">
+<table width="83%" border="1" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td colspan="4"><strong>1.<font face="Ariya"> Kv nnkan m}f&agrave;, &oacute; k&eacute;r&eacute; j&ugrave;,
+      t&iacute; &oacute; w&agrave; n&iacute;n&uacute; il&eacute; rc t&agrave;b&iacute; y&agrave;r&aacute; rc
+      n&iacute; il&eacute; &igrave;w&eacute;. E&eacute;l&ograve;&oacute; ni o
+      san f&uacute;n &igrave;kzzkan? B&iacute; o k&ograve; b&aacute; mv iye ow&oacute; &agrave;wvn
+      nnkan wzny&iacute;, kv iye t&iacute; o r&ograve; p&eacute; &igrave;kzzkan
+      l&egrave; j}</font> (Identify at least six items in your apartment or dorm
+      room. How much did you pay for each item? If you don&#8217;t know the cost
+      of each item, state how much you think each item would cost).</strong></td>
+  </tr>
+  <tr>
+    <td colspan="4">&nbsp;</td>
+    </tr>
+  <tr>
+    <td colspan="4"><textarea name="textarea3" cols="75" rows="15" wrap="VIRTUAL"></textarea></td>
+    </tr>
+  <tr bgcolor="#999999">
+    <td height="21" colspan="4">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="47" colspan="4"><strong>2.	<font face="Ariya">Zr} rc, Ad&eacute;w&aacute;l&eacute; fc lv
+      ra |rv r&eacute;d&iacute;&ograve; tuntun, o s&igrave; f} k&iacute; o b&aacute; oun
+      lv. Kv &igrave;fzrzw&eacute;rz t&iacute; &oacute; le w&aacute;y&eacute; l&aacute;&agrave;rin &igrave;wv &agrave;ti
+      Ad&eacute;w&aacute;l&eacute;. R&aacute;nt&iacute; l&aacute;ti b&egrave;&egrave;re
+      or&iacute;xir&iacute;xi &igrave;b&eacute;&egrave;r&egrave; n&iacute;pa
+      ir&uacute; |rv t&iacute; &oacute; f}, oye t&iacute; &oacute; f} san &agrave;ti
+      il&eacute; &igrave;taj&agrave; t&iacute; &oacute; ti fc r&agrave; |rv y&igrave; &iacute; </font>(Your
+      friend, Ad&eacute;w&aacute;l&eacute; wants to buy a new radio set and would
+      like you to accompany him. Write a dialogue that can occur between you
+      and Ad&eacute;w&aacute;l&eacute;. Remember to ask different questions about
+      the type of set he wants, the amount he wants to pay and the store at which
+      he wants to buy this set).</strong></td>
+  </tr>
+  <tr>
+    <td height="40" colspan="4"><textarea name="textarea2" cols="75" rows="15" wrap="VIRTUAL"></textarea></td>
+  </tr>
+  <tr bgcolor="#999999">
+    <td width="8%">&nbsp;</td>
+    <td width="22%">&nbsp;</td>
+    <td width="35%">&nbsp;</td>
+    <td width="35%">&nbsp;</td>
+  </tr>
+  <tr bgcolor="#999999">
+    <td colspan="4" bgcolor="#FFFFFF"><strong>3.	<font face="Ariya">O lv ra nnkan
+          f&uacute;n &agrave;tipad&agrave; s&iacute; il&eacute; &igrave;we.
+      O n&iacute;l&ograve; iwe ix}, l}|d&igrave;, g&egrave;g&eacute; &agrave;ti &igrave;p&agrave;w&eacute;r}.
+      iwe ix} kzzkan j} &agrave;&aacute;d&lt;rin n&aacute;&iacute;r&agrave;,
+      l}|d&igrave; kzzkan j} n&aacute;&iacute;r&agrave; m&aacute;r&ugrave;nd&iacute;nl&lt;gbzn,
+      og&oacute;g&igrave; n&aacute;&iacute;r&agrave; ni g&egrave;g&eacute; kzzkan, &igrave;p&agrave;w&eacute;r}
+      kzzkan s&igrave; j} n&aacute;&iacute;r&agrave; m}f&agrave;. O n&iacute;l&ograve; iwe
+      ix} m}rin, l}|d&igrave; m&aacute;r&ugrave;n-&uacute;n, g&egrave;g&eacute; m}ta &agrave;ti &igrave;p&agrave;w&eacute;r}
+      kan. Kv &igrave;fzrzw&eacute;rz t&iacute; &oacute; le w&aacute;y&eacute; l&aacute;&agrave;rin &igrave;wv &agrave;ti
+      vl&lt;j&agrave;.</font> (You are shopping for &#8216;back to school&#8217;.
+      You need notebooks, pencils, pens, and erasers. Notebooks are 70 Naira
+      (#)
+      each, pencils are #25 each, each pen is #40 and each eraser is #6. You
+      need 4 notebooks, 5 pencils, 3 pens, and 1 eraser. Write a dialogue that
+      can occur between you </strong></td>
+    </tr>
+  <tr bgcolor="#999999">
+    <td colspan="4" bgcolor="#FFFFFF"><textarea name="textarea4" cols="75" rows="15" wrap="VIRTUAL"></textarea>
+    </td>
+  </tr>
+  <tr bgcolor="#999999">
+    <td colspan="4">&nbsp;</td>
+    </tr>
+  <tr>
+    <td colspan="4" bgcolor="#999999">&nbsp;</td>
+    </tr>
+</table>
+</form>
+<br>
+<TABLE cellSpacing=0 cellPadding=4 width="100%" border=0>
+    <tr bgcolor="#FFFFCC"> 
+    <td ><!-- #BeginLibraryItem "../Library/footer.lbi" --><font face="Verdana, Arial, Helvetica, sans-serif" size="2">&copy; African Studies 
+
+Institute, University of Georgia.</font><!-- #EndLibraryItem -->    </td>
+  </tr>
+</table>
+</TBODY></TABLE></UL>
+</BODY></HTML>

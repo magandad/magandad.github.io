@@ -1,0 +1,159 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<HTML><HEAD><TITLE>Unit 6: Diagnostic test</TITLE>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"></HEAD>
+<BODY bgColor=#ffffff leftMargin=0 topMargin=0 marginheight="0" marginwidth="0">
+<TABLE cellSpacing=0 cellPadding=4 width="100%" border=0>
+  <TBODY>
+  <tr> 
+    <td bgcolor="#FFFFFF"><img src="../media/images/yorubalogo.gif" width="201" height="87"</td>
+    <td bgcolor="#FFFFFF"> 
+      <p align="right"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><a href="../index.html">Home<br>
+        </a><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><a href="../overview.html">Overview<br>
+        </a><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><a href="../techHelp.html">Technical 
+        Help</a></p>
+    </td>
+  </tr>
+<tr> 
+    <td colspan="2" bgcolor="#CCCCFF"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"> 
+      <a href=../index.html>Home</a> &gt;&nbsp;<a href="../lessons.html">Select
+      a Unit</a> &gt; <b><a href="index.html">Unit
+      6: <font face="Ariya">AXV W&Iacute;WZ &Agrave;TI OGE X&Iacute;XE</font></a></b></font></td>
+  </tr>
+</TABLE>
+<SCRIPT language=JavaScript>
+
+CorrectAnswers = new Array();
+
+CorrectAnswers[0]=3;
+CorrectAnswers[1]=5;
+CorrectAnswers[2]=7;
+CorrectAnswers[3]=8;
+CorrectAnswers[4]=9;
+CorrectAnswers[5]=10;
+CorrectAnswers[6]=2;
+CorrectAnswers[7]=1;
+CorrectAnswers[8]=6;
+CorrectAnswers[9]=4;
+
+
+
+macrightchar=':-)';
+macwrongchar='X';
+winrightchar=':-)';
+winwrongchar='X';
+
+
+var platform = 'win'
+if (navigator.appVersion.indexOf('Mac') != -1) {platform = 'mac'}
+if (platform == 'mac') {
+	rightchar = unescape(macrightchar)
+	wrongchar = unescape(macwrongchar)
+}
+else {
+	rightchar = unescape(winrightchar)
+	wrongchar = unescape(winwrongchar)
+}
+
+function CheckAnswer(){
+
+	var i = 0;
+	var TotalCorrect = 0;
+	var x = 0;
+	var Score = 0;
+
+	for (i=0; i<CorrectAnswers.length; i++){
+		if (document.QuizForm.elements[i*2].selectedIndex == CorrectAnswers[i]){
+			document.QuizForm.elements[(i*2)+1].value = rightchar;
+			TotalCorrect++;
+		}
+		else{
+			document.QuizForm.elements[(i*2)+1].value = wrongchar;
+		}
+	}
+	Score = Math.floor((TotalCorrect*100)/CorrectAnswers.length);
+	document.CheckForm.ScoreBox.value = Score + '%';
+}
+
+
+</SCRIPT>
+<blockquote>
+  <blockquote>
+    <p><strong><font size="3" face="Verdana, Arial, Helvetica, sans-serif">ANSWER ALL QUESTIONS
+    </font> </strong></p>
+  </blockquote>
+</blockquote>
+<form name="form1" method="post" action="">
+<table width="83%" border="1" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td colspan="4"><strong>1.	<font face="Ariya">K&iacute;ni axv &igrave;b&iacute;l| Yor&ugrave;ba f&uacute;n
+      vk&ugrave;nrin &agrave;ti ob&igrave;nrin? Kv or&iacute;s&igrave;&iacute; axv &igrave;b&iacute;l|
+      m}tam}ta f&uacute;n takvtabo. K&iacute; ni &agrave;p|crc ohun zx&lt; Yor&ugrave;ba
+      m&aacute;r&ugrave;n?</font></strong> <strong>(What are traditional Yoruba clothes for men and women?
+      List three clothing items for both sexes. What are five examples of Yoruba
+      accessories? </strong></td>
+  </tr>
+  <tr>
+    <td colspan="4">&nbsp;</td>
+    </tr>
+  <tr>
+    <td colspan="4"><textarea name="textarea3" cols="75" rows="15" wrap="VIRTUAL"></textarea></td>
+    </tr>
+  <tr bgcolor="#999999">
+    <td height="21" colspan="4">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="40" colspan="4"><strong>2.<font face="Ariya"> &Agrave;b&uacute;r&ograve; rc fc lv s&iacute; &igrave;lu
+      New York, sv f&uacute;n un ir&uacute; axv t&iacute; &oacute; d&aacute;ra
+      f&uacute;n &agrave;k&oacute;k&ograve; y&iacute;.</font> (your younger sibling
+      wants to go to New York City, tell him/her the types of clothes that are
+      good to wear at this time of the year).</strong></td>
+  </tr>
+  <tr>
+    <td height="40" colspan="4"><textarea name="textarea2" cols="75" rows="15" wrap="VIRTUAL"></textarea></td>
+  </tr>
+  <tr bgcolor="#999999">
+    <td width="8%">&nbsp;</td>
+    <td width="22%">&nbsp;</td>
+    <td width="35%">&nbsp;</td>
+    <td width="35%">&nbsp;</td>
+  </tr>
+  <tr bgcolor="#999999">
+    <td colspan="4" bgcolor="#FFFFFF"><strong>3.	<font face="Ariya">O lv s&iacute; il&eacute; t&eacute;lz
+      l&aacute;n&agrave;&aacute; l&aacute;ti lv r&aacute;nxv. O f} r&aacute;n
+      axv &ograve;de &ograve;n&iacute;. Kv &igrave;fzrzw&eacute;rz t&iacute; &oacute; le
+      w&aacute;y&eacute; l&aacute;&agrave;rin &igrave;wv &agrave;ti t&eacute;lz
+      rc. </font>(You went to have some new clothes made at the tailor yesterday. You
+      want some modern styled clothes. Write a dialogue that can occur between
+      you and the tailor).</strong></td>
+    </tr>
+  <tr bgcolor="#999999">
+    <td colspan="4" bgcolor="#FFFFFF"><textarea name="textarea4" cols="75" rows="15" wrap="VIRTUAL"></textarea>
+    </td>
+  </tr>
+  <tr bgcolor="#999999">
+    <td colspan="4" bgcolor="#FFFFFF"><strong><br>
+      4.	<font face="Ariya">Xe &agrave;p&egrave;j&uacute;we ir&uacute; axv t&iacute; o r&ograve; p&eacute; o
+      m&aacute;a wz lvla </font>(Describe the attire that you think you might wear tomorrow) </strong><br></td>
+  </tr>
+  <tr bgcolor="#999999">
+    <td colspan="4" bgcolor="#FFFFFF"><textarea name="textarea4" cols="75" rows="15" wrap="VIRTUAL"></textarea></td>
+  </tr>
+  <tr bgcolor="#999999">
+    <td colspan="4">&nbsp;</td>
+    </tr>
+  <tr>
+    <td colspan="4" bgcolor="#999999">&nbsp;</td>
+    </tr>
+</table>
+</form>
+<br>
+<TABLE cellSpacing=0 cellPadding=4 width="100%" border=0>
+    <tr bgcolor="#FFFFCC"> 
+    <td ><!-- #BeginLibraryItem "../Library/footer.lbi" --><font face="Verdana, Arial, Helvetica, sans-serif" size="2">&copy; African Studies 
+
+Institute, University of Georgia.</font><!-- #EndLibraryItem -->    </td>
+  </tr>
+</table>
+</TBODY></TABLE></UL>
+</BODY></HTML>

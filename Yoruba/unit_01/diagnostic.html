@@ -1,0 +1,339 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<HTML><HEAD><TITLE>Unit 1: Diagnostic test</TITLE>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"></HEAD>
+<BODY bgColor=#ffffff leftMargin=0 topMargin=0 marginheight="0" marginwidth="0">
+<TABLE cellSpacing=0 cellPadding=4 width="100%" border=0>
+  <TBODY>
+  <tr> 
+    <td bgcolor="#FFFFFF"><img src="../media/images/yorubalogo.gif" width="201" height="87"</td>
+    <td bgcolor="#FFFFFF"> 
+      <p align="right"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><a href="../index.html">Home<br>
+        </a><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><a href="../overview.html">Overview<br>
+        </a><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><a href="../techHelp.html">Technical 
+        Help</a></p>
+    </td>
+  </tr>
+<tr> 
+    <td bgcolor="#CCCCFF"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><a href="../index.html">Home</a></font><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><A HREF="../lessons.html">Select
+         Unit </A> &gt; <font face="Verdana, Arial, Helvetica, sans-serif" size="2"><A HREF="index.html">Unit 1: &Igrave;k&iacute;ni (Greetings)</A></font> 
+      <b>Diagnostic Test</td>
+
+    <td bgcolor="#CCCCFF">&nbsp;</td>
+  </tr>
+</TBODY></TABLE>
+<SCRIPT language=JavaScript>
+
+CorrectAnswers = new Array();
+
+CorrectAnswers[0]=3;
+CorrectAnswers[1]=5;
+CorrectAnswers[2]=7;
+CorrectAnswers[3]=8;
+CorrectAnswers[4]=9;
+CorrectAnswers[5]=10;
+CorrectAnswers[6]=2;
+CorrectAnswers[7]=1;
+CorrectAnswers[8]=6;
+CorrectAnswers[9]=4;
+
+
+
+macrightchar=':-)';
+macwrongchar='X';
+winrightchar=':-)';
+winwrongchar='X';
+
+
+var platform = 'win'
+if (navigator.appVersion.indexOf('Mac') != -1) {platform = 'mac'}
+if (platform == 'mac') {
+	rightchar = unescape(macrightchar)
+	wrongchar = unescape(macwrongchar)
+}
+else {
+	rightchar = unescape(winrightchar)
+	wrongchar = unescape(winwrongchar)
+}
+
+function CheckAnswer(){
+
+	var i = 0;
+	var TotalCorrect = 0;
+	var x = 0;
+	var Score = 0;
+
+	for (i=0; i<CorrectAnswers.length; i++){
+		if (document.QuizForm.elements[i*2].selectedIndex == CorrectAnswers[i]){
+			document.QuizForm.elements[(i*2)+1].value = rightchar;
+			TotalCorrect++;
+		}
+		else{
+			document.QuizForm.elements[(i*2)+1].value = wrongchar;
+		}
+	}
+	Score = Math.floor((TotalCorrect*100)/CorrectAnswers.length);
+	document.CheckForm.ScoreBox.value = Score + '%';
+}
+
+
+</SCRIPT>
+<blockquote>
+  <blockquote>
+    <p><strong><font size="3" face="Verdana, Arial, Helvetica, sans-serif">ANSWER ALL QUESTIONS
+    </font> </strong></p>
+  </blockquote>
+</blockquote>
+<form name="form1" method="post" action="">
+<table width="83%" border="1" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td colspan="4">1:<font face="Ariya"> Kv &igrave;kini t&agrave;b&iacute; &agrave;k&oacute;k&ograve; t&iacute; o
+        b&aacute; yc n&iacute; &egrave;de Yor&ugrave;b&aacute; t&agrave;b&iacute; &egrave;de &Ograve;y&igrave;nb&oacute;</font> <strong>(Fill
+        in the appropriate greetings or period of the day in Yor&ugrave;b&aacute; or
+        English):</strong></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="2"><div align="center"><strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Greetings</font></strong></div>
+    </td>
+    <td colspan="2"><div align="center"><strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Period
+            of the day</font></strong></div>
+    </td>
+  </tr>
+  <tr>
+    <td><div align="center"><strong>Yor&ugrave;b&aacute; </strong></div>
+    </td>
+    <td><div align="center"><strong>English </strong></div>
+    </td>
+    <td><div align="center"><strong>Yor&ugrave;b&aacute; </strong></div>
+    </td>
+    <td><div align="center"><strong>English</strong></div>
+    </td>
+  </tr>
+  <tr>
+    <td><div align="center">
+      <input type="text" name="textfield">
+    </div></td>
+    <td><div align="center">Good Morning</div></td>
+    <td><div align="center">
+      <input type="text" name="textfield2">
+    </div></td>
+    <td><div align="center">
+      <input type="text" name="textfield3">
+    </div></td>
+  </tr>
+  <tr>
+    <td><div align="center"><font size="2" face="Ariya">K&aacute;al}</font></div></td>
+    <td><div align="center">
+      <input type="text" name="textfield4">
+    </div></td>
+    <td><div align="center">
+      <input type="text" name="textfield5">
+    </div></td>
+    <td><div align="center">
+      <input type="text" name="textfield6">
+    </div></td>
+  </tr>
+  <tr>
+    <td><div align="center">
+      <input type="text" name="textfield7">
+    </div></td>
+    <td><div align="center">
+      <input type="text" name="textfield8">
+    </div></td>
+    <td><div align="center">
+      <input type="text" name="textfield9">
+    </div></td>
+    <td><div align="center">Afternoon</div></td>
+  </tr>
+  <tr>
+    <td><div align="center">
+      <input type="text" name="textfield10">
+    </div></td>
+    <td><div align="center">
+      <input type="text" name="textfield11">
+    </div></td>
+    <td><div align="center"><font face="Ariya">&Igrave;rzl}</font> </div></td>
+    <td><div align="center">
+      <input type="text" name="textfield13">
+    </div></td>
+  </tr>
+  <tr>
+    <td><div align="center">
+      <input type="text" name="textfield102">
+    </div></td>
+    <td><div align="center">Greetings at Mid-day</div></td>
+    <td><div align="center">
+      <input type="text" name="textfield103">
+    </div></td>
+    <td><div align="center">Mid-Day</div></td>
+  </tr>
+  <tr>
+    <td><div align="center">
+      <input type="text" name="textfield104">
+    </div></td>
+    <td><div align="center">Greetings at Dawn</div></td>
+    <td><div align="center">
+      <input type="text" name="textfield105">
+    </div></td>
+    <td><div align="center"></div></td>
+  </tr>
+  <tr bgcolor="#999999">
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="4">2:<font size="2" face="Ariya"> Kv &igrave;k&iacute;ni t&iacute; o
+        b&aacute; yc n&iacute; &egrave;de
+      Yor&ugrave;b&aacute; f&uacute;n &agrave;wvn &egrave;n&igrave;y&agrave;n
+      wzny&iacute; </font> <strong>(Provide the appropriate Yor&ugrave;b&aacute; greetings
+      for the following people):</strong></td>
+    </tr>
+  <tr>
+    <td colspan="2"><div align="left"><strong><font size="2" face="Ariya">A)
+              Mrs. L&aacute;oy&egrave; in
+      the evening </font></strong></div></td>
+    <td colspan="2"><div align="left"><strong><font size="2" face="Ariya">B)	A worker hard at work.</font></strong></div></td>
+    </tr>
+  <tr>
+    <td colspan="2"><div align="left"><strong>
+        <input name="textfield1042" type="text" size="45">
+    </strong></div></td>
+    <td colspan="2"><div align="left"><strong>
+        <input name="textfield1043" type="text" size="45">
+    </strong></div></td>
+    </tr>
+  <tr>
+    <td colspan="2"><div align="left"><strong>D)	A farmer</strong></div></td>
+    <td colspan="2"><div align="left"><strong>E)	Your grandfather in the afternoon</strong></div></td>
+    </tr>
+  <tr>
+    <td colspan="2">
+      <div align="left">
+        <input name="textfield10422" type="text" size="45">
+      </div></td>
+    <td colspan="2">
+      <div align="left">
+        <input name="textfield104222" type="text" size="45">
+      </div></td>
+    </tr>
+  <tr>
+    <td colspan="2"><strong><font face="Ariya">C)</font>	Someone you meet standing</strong></td>
+    <td colspan="2"><strong>F)	Dr. F&aacute;lad&eacute; expecting a visitor</strong></td>
+    </tr>
+  <tr>
+    <td colspan="2"><strong>
+      <input name="textfield104223" type="text" size="45">
+    </strong></td>
+    <td colspan="2"><strong>
+      <input name="textfield104224" type="text" size="45">
+    </strong></td>
+    </tr>
+  <tr>
+    <td colspan="2"><strong>G)	Your father at dawn</strong></td>
+    <td colspan="2"><strong>GB)	A friend during the cold season</strong></td>
+  </tr>
+  <tr>
+    <td colspan="2"><strong>
+      <input name="textfield104223" type="text" size="45">
+    </strong></td>
+    <td colspan="2"><strong>
+      <input name="textfield104224" type="text" size="45">
+    </strong></td>
+  </tr>
+  <tr>
+    <td colspan="2"><strong>H)	Professor Isola eating lunch</strong></td>
+    <td colspan="2"><strong>I)	The mother of a new born baby</strong></td>
+  </tr>
+  <tr>
+    <td colspan="2"><strong>
+      <input name="textfield104223" type="text" size="45">
+    </strong></td>
+    <td colspan="2"><strong>
+      <input name="textfield104224" type="text" size="45">
+    </strong></td>
+  </tr>
+  <tr>
+    <td colspan="2"><strong>J)	An hairdresser </strong></td>
+    <td colspan="2"><strong>K)	A classmate celebrating a birthday</strong></td>
+  </tr>
+  <tr>
+    <td colspan="2"><input name="textfield1042232" type="text" size="45">
+</td>
+    <td colspan="2"><input name="textfield104224" type="text" size="45">
+    </td>
+  </tr>
+  <tr>
+    <td colspan="4" bgcolor="#999999">&nbsp;</td>
+    </tr>
+  <tr>
+    <td colspan="4">3:	<font face="Verdana, Arial, Helvetica, sans-serif">Kv &agrave;wvn oy&egrave; wzny&iacute; n&iacute; &egrave;de &Ograve;y&igrave;nb&oacute; </font><strong>(Write
+      the following titles in English):</strong></td>
+    </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><strong><font face="Ariya">Zjzgb&lt;n</font></strong></td>
+    <td><input type="text" name="textfield12"></td>
+    <td><strong><font face="Ariya">Ayaba</font></strong></td>
+    <td><input type="text" name="textfield128"></td>
+  </tr>
+  <tr>
+    <td><strong><font face="Ariya">Ar&aacute;k&ugrave;nrin</font></strong></td>
+    <td><input type="text" name="textfield122"></td>
+    <td><strong><font face="Ariya">&Agrave;r|mv</font></strong></td>
+    <td><input type="text" name="textfield129"></td>
+  </tr>
+  <tr>
+    <td><strong><font face="Ariya">Zmzw&eacute;</font></strong></td>
+    <td><input type="text" name="textfield123"></td>
+    <td><strong><font face="Ariya">Vba</font></strong></td>
+    <td><input type="text" name="textfield1210"></td>
+  </tr>
+  <tr>
+    <td><strong><font face="Ariya">Ba&aacute;l&eacute;</font></strong></td>
+    <td><input type="text" name="textfield124"></td>
+    <td><strong><font face="Ariya">Ad&aacute;j&lt;</font></strong></td>
+    <td><input type="text" name="textfield1211"></td>
+  </tr>
+  <tr>
+    <td><strong><font face="Ariya">Omidan</font></strong></td>
+    <td><input type="text" name="textfield125"></td>
+    <td><strong><font face="Ariya">Ol&oacute;y&egrave;</font></strong></td>
+    <td><input type="text" name="textfield1212"></td>
+  </tr>
+  <tr>
+    <td><strong><font face="Ariya">Al&agrave;gb&agrave; </font></strong></td>
+    <td><input type="text" name="textfield126"></td>
+    <td><strong><font face="Ariya">&Igrave;y&aacute;&agrave;fin </font></strong></td>
+    <td><input type="text" name="textfield1213"></td>
+  </tr>
+  <tr>
+    <td><strong><font face="Ariya">Zg&aacute;gun</font></strong></td>
+    <td><input type="text" name="textfield127"></td>
+    <td><strong><font face="Ariya">Zgb}ni</font></strong></td>
+    <td><input type="text" name="textfield1214"></td>
+  </tr>
+</table>
+</form>
+<br>
+<TABLE cellSpacing=0 cellPadding=4 width="100%" border=0>
+    <tr bgcolor="#FFFFCC"> 
+    <td ><!-- #BeginLibraryItem "../Library/footer.lbi" --><font face="Verdana, Arial, Helvetica, sans-serif" size="2">&copy; African Studies 
+
+Institute, University of Georgia.</font><!-- #EndLibraryItem -->    </td>
+  </tr>
+</table>
+</TBODY></TABLE></UL>
+</BODY></HTML>

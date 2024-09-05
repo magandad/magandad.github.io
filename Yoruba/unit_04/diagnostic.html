@@ -1,0 +1,602 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<HTML><HEAD><TITLE>Unit 3: Diagnostic Test</TITLE>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"></HEAD>
+<BODY bgColor=#ffffff leftMargin=0 topMargin=0 marginheight="0" marginwidth="0">
+<TABLE cellSpacing=0 cellPadding=4 width="100%" border=0>
+  <TBODY>
+  <tr> 
+    <td bgcolor="#FFFFFF"><img src="../media/images/yorubalogo.gif" width="201" height="87"</td>
+    <td bgcolor="#FFFFFF"> 
+      <p align="right"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><a href="../index.html">Home<br>
+        </a><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><a href="../overview.html">Overview<br>
+        </a><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><a href="../techHelp.html">Technical 
+        Help</a></p>
+    </td>
+  </tr>
+<tr> 
+    <td colspan="2" bgcolor="#CCCCFF"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"> 
+      <a href=file:///C|/yoruba/diagnostic/index.html>Home</a> &gt;&nbsp;<a href="../lessons.html">Select
+      a Unit</a> &gt; <b><a href="index.html">Unit 4: <font face="Ariya">&Ograve;NKA
+      YOR&Ugrave;B&Aacute;</font></a></b></font></td>
+  </tr>
+    </TABLE>
+<SCRIPT language=JavaScript>
+
+CorrectAnswers = new Array();
+
+CorrectAnswers[0]=3;
+CorrectAnswers[1]=5;
+CorrectAnswers[2]=7;
+CorrectAnswers[3]=8;
+CorrectAnswers[4]=9;
+CorrectAnswers[5]=10;
+CorrectAnswers[6]=2;
+CorrectAnswers[7]=1;
+CorrectAnswers[8]=6;
+CorrectAnswers[9]=4;
+
+
+
+macrightchar=':-)';
+macwrongchar='X';
+winrightchar=':-)';
+winwrongchar='X';
+
+
+var platform = 'win'
+if (navigator.appVersion.indexOf('Mac') != -1) {platform = 'mac'}
+if (platform == 'mac') {
+	rightchar = unescape(macrightchar)
+	wrongchar = unescape(macwrongchar)
+}
+else {
+	rightchar = unescape(winrightchar)
+	wrongchar = unescape(winwrongchar)
+}
+
+function CheckAnswer(){
+
+	var i = 0;
+	var TotalCorrect = 0;
+	var x = 0;
+	var Score = 0;
+
+	for (i=0; i<CorrectAnswers.length; i++){
+		if (document.QuizForm.elements[i*2].selectedIndex == CorrectAnswers[i]){
+			document.QuizForm.elements[(i*2)+1].value = rightchar;
+			TotalCorrect++;
+		}
+		else{
+			document.QuizForm.elements[(i*2)+1].value = wrongchar;
+		}
+	}
+	Score = Math.floor((TotalCorrect*100)/CorrectAnswers.length);
+	document.CheckForm.ScoreBox.value = Score + '%';
+}
+
+
+</SCRIPT>
+<blockquote>
+  <blockquote>
+    <p><strong><font size="3" face="Verdana, Arial, Helvetica, sans-serif">ANSWER ALL QUESTIONS
+    </font> </strong></p>
+  </blockquote>
+</blockquote>
+<form name="form1" method="post" action="">
+<table width="83%" border="1" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="30" colspan="6"><font size="3" face="Ariya"><strong>1. <font face="Verdana, Arial, Helvetica, sans-serif">Working
+          with 1 to 20: Provide the missing numbers in each group, using the
+          provided help:</font></strong></font><strong><font face="Verdana, Arial, Helvetica, sans-serif"> </font></strong></td>
+  </tr>
+  <tr>
+    <td width="12%"><div align="center"><strong>Eg;: </strong></div></td>
+    <td width="14%"><div align="center"><strong>+ 6</strong></div></td>
+    <td width="19%"><div align="center"><strong>5</strong></div></td>
+    <td width="17%"><div align="center"><strong>11</strong></div></td>
+    <td width="16%"><div align="center"><strong>17</strong></div></td>
+    <td width="22%"><div align="center"><strong>23</strong></div></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><div align="center"><strong>A)</strong></div>
+    </td>
+    <td><div align="center">+5
+    </div>
+    </td>
+    <td><div align="center">
+      <input type="text" name="textfield1283">
+    </div>
+    </td>
+    <td><div align="center"><font face="Ariya">c}f&agrave;</font></div>
+    </td>
+    <td><div align="center"><font face="Ariya">o&oacute;k&agrave;nl&aacute; </font></div>
+    </td>
+    <td><div align="center">
+      <input type="text" name="textfield1282">
+    </div>
+    </td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><div align="center"><strong>B)</strong></div>
+    </td>
+    <td><div align="center">-3</div>
+    </td>
+    <td><div align="center">og&uacute;n </div>
+    </td>
+    <td><div align="center">
+      <input type="text" name="textfield12822">
+    </div>
+    </td>
+    <td><div align="center"><font face="Ariya">c}rinla</font></div>
+    </td>
+    <td><div align="center">
+        <input type="text" name="textfield1282">
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><div align="center">D)</div></td>
+    <td><div align="center">+4</div></td>
+    <td><div align="center">
+      <input type="text" name="textfield128222">
+    </div></td>
+    <td><div align="center"><font face="Ariya">c}rin</font></div></td>
+    <td><div align="center">
+      <input type="text" name="textfield128223">
+    </div></td>
+    <td><div align="center"><font face="Ariya">e&eacute;j&igrave;l&aacute;</font></div></td>
+  </tr>
+  <tr>
+    <td><div align="center"></div></td>
+    <td><div align="center"></div></td>
+    <td><div align="center"></div></td>
+    <td><div align="center"></div></td>
+    <td><div align="center"></div></td>
+    <td><div align="center"></div></td>
+  </tr>
+  <tr>
+    <td height="43"><div align="center">E)</div></td>
+    <td><div align="center">x2</div></td>
+    <td><div align="center"><font face="Ariya">e&eacute;j&igrave;</font></div></td>
+    <td><div align="center">
+      <input type="text" name="textfield128224">
+    </div></td>
+    <td><div align="center"><font face="Ariya">c}jv</font></div></td>
+    <td><div align="center">
+      <input type="text" name="textfield128225">
+    </div></td>
+  </tr>
+  <tr>
+    <td><div align="center"></div></td>
+    <td><div align="center"></div></td>
+    <td><div align="center"></div></td>
+    <td><div align="center"></div></td>
+    <td><div align="center"></div></td>
+    <td><div align="center"></div></td>
+  </tr>
+  <tr>
+    <td><div align="center"><font face="Ariya">E)</font></div></td>
+    <td><div align="center">-4</div></td>
+    <td><div align="center"><font face="Ariya">ogun</font></div></td>
+    <td><div align="center">
+      <input type="text" name="textfield128226">
+    </div></td>
+    <td><div align="center">
+      <input type="text" name="textfield128227">
+    </div></td>
+    <td><div align="center"><font face="Ariya">c}jv</font></div></td>
+  </tr>
+  <tr>
+    <td><div align="center"></div></td>
+    <td><div align="center"></div></td>
+    <td><div align="center"></div></td>
+    <td><div align="center"></div></td>
+    <td><div align="center"></div></td>
+    <td><div align="center"></div></td>
+  </tr>
+  <tr bgcolor="#999999">
+    <td height="21" colspan="6">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="40" colspan="6"><font face="Verdana, Arial, Helvetica, sans-serif"><strong>2.
+          Write correct letter corresponding to the number for the following
+          multiples of twenty in Yoruba:</strong></font><strong> </strong></td>
+  </tr>
+  <tr>
+    <td><div align="center"><font face="Ariya">Eg. </font></div>
+    </td>
+    <td><div align="center">20</div>
+    </td>
+    <td><div align="center"><font face="Ariya">=</font></div>
+    </td>
+    <td><div align="center"><font face="Ariya">Og&uacute;n </font></div>
+    </td>
+    <td><div align="center">      </div>
+    </td>
+    <td><div align="center"></div>
+    </td>
+  </tr>
+  <tr>
+    <td><div align="center"></div>
+    </td>
+    <td><div align="center"></div>
+    </td>
+    <td><div align="center"></div>
+    </td>
+    <td><div align="center"></div>
+    </td>
+    <td><div align="center"> </div>
+    </td>
+    <td><div align="center"></div>
+    </td>
+  </tr>
+  <tr>
+    <td><div align="center">180</div>
+    </td>
+    <td><div align="center">
+      <input type="text" name="textfield1282222">
+    </div>
+    </td>
+    <td><div align="center"><font face="Ariya">60</font></div>
+    </td>
+    <td><div align="center"><font face="Ariya">
+      <input type="text" name="textfield1282223">
+    </font></div>
+    </td>
+    <td><div align="center">120 </div>
+    </td>
+    <td><div align="center"><font face="Ariya">
+      <input type="text" name="textfield1282224">
+    </font></div>
+    </td>
+  </tr>
+  <tr>
+    <td><div align="center"></div>
+    </td>
+    <td><div align="center"></div>
+    </td>
+    <td><div align="center"></div>
+    </td>
+    <td><div align="center"></div>
+    </td>
+    <td><div align="center"> </div>
+    </td>
+    <td><div align="center"></div>
+    </td>
+  </tr>
+  <tr>
+    <td height="26"><div align="center">40</div>
+    </td>
+    <td><div align="center"><font face="Ariya">
+      <input type="text" name="textfield1282225">
+    </font></div>
+    </td>
+    <td><div align="center">80</div>
+    </td>
+    <td><div align="center"><font face="Ariya">
+      <input type="text" name="textfield1282226">
+    </font></div>
+    </td>
+    <td><div align="center">100</div>
+    </td>
+    <td><div align="center"><font face="Ariya">
+      <input type="text" name="textfield1282227">
+    </font></div>
+    </td>
+  </tr>
+  <tr>
+    <td><div align="center"></div>
+    </td>
+    <td><div align="center"></div>
+    </td>
+    <td><div align="center"></div>
+    </td>
+    <td><div align="center"></div>
+    </td>
+    <td><div align="center"> </div>
+    </td>
+    <td><div align="center"></div>
+    </td>
+  </tr>
+  <tr>
+    <td><div align="center">160</div>
+    </td>
+    <td><div align="center"><font face="Ariya">
+      <input type="text" name="textfield1282228">
+    </font></div>
+    </td>
+    <td><div align="center">200</div>
+    </td>
+    <td><div align="center"><font face="Ariya">
+      <input type="text" name="textfield1282229">
+    </font></div>
+    </td>
+    <td><div align="center"> </div>
+    </td>
+    <td><div align="center"></div>
+    </td>
+  </tr>
+  <tr>
+    <td height="40" colspan="6"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A)</strong> <strong><font size="3" face="Ariya">Vg&lt;ta,
+          B) Vg&lt;s&agrave;n-&aacute;n, <font face="Verdana, Arial, Helvetica, sans-serif">C</font>)
+          Og&oacute;j&igrave;, D) 
+      Vg&lt;f&agrave;, E) Igba, F) Vg&lt;jv, G) Vg&lt;r&ugrave;n-&uacute;n, H)
+      Vg&lt;rin </font></strong></td>
+  </tr>
+  <tr>
+    <td height="40" colspan="6"><font face="Verdana, Arial, Helvetica, sans-serif"><strong>3.	Provide the answers for these arithmetic problems:</strong></font></td>
+  </tr>
+  <tr>
+    <td height="40">&nbsp;</td>
+    <td height="40" colspan="3"><font face="Ariya">C}ta m&eacute;l&ograve;&oacute; ni &oacute; w&agrave; n&iacute;n&uacute; c}t&agrave;d&iacute;nl&lt;gbzn?
+        (How many 3s are in 27?)</font></td>
+    <td height="40" colspan="2"><font size="3" face="Ariya"><strong>m</strong>es&agrave;n-&aacute;n</font></td>
+  </tr>
+  <tr>
+    <td height="40">a)</td>
+    <td height="40" colspan="3"><font face="Ariya">Og&uacute;n m&eacute;l&ograve;&oacute; ni &oacute; w&agrave; n&iacute;n&uacute; vg&lt;s&agrave;n-&aacute;n?</font></td>
+    <td height="40" colspan="2"><font size="3" face="Ariya"><strong>m
+      <input type="text" name="textfield12823">
+    </strong></font></td>
+  </tr>
+  <tr>
+    <td height="40">b)</td>
+    <td height="40" colspan="3"><font face="Ariya">C}jv m&eacute;l&ograve;&oacute; ni &oacute; w&agrave; n&iacute;n&uacute; vg&lt;rin? </font></td>
+    <td height="40" colspan="2"><font size="3" face="Ariya"><strong>m</strong>
+      <input type="text" name="textfield12824">
+    </font></td>
+  </tr>
+  <tr>
+    <td height="40">d)</td>
+    <td height="40" colspan="3"><font face="Ariya">A&aacute;r&ugrave;n-&uacute;n
+        m&eacute;l&ograve;&oacute; ni &oacute; w&agrave; n&iacute;n&uacute; &agrave;&aacute;d&lt;rin</font></td>
+    <td height="40" colspan="2"><font size="3" face="Ariya"><strong>m</strong>
+          <input type="text" name="textfield12825">
+    </font></td>
+  </tr>
+  <tr>
+    <td height="40">e)</td>
+    <td height="40" colspan="3"><font face="Ariya">Vg&lt;r&ugrave;n-&uacute;n m&eacute;l&ograve;&oacute; ni &oacute; w&agrave; n&iacute;n&uacute; igba?</font></td>
+    <td height="40" colspan="2"><font size="3" face="Ariya"><strong>m</strong>
+          <input type="text" name="textfield12825">
+    </font></td>
+  </tr>
+  <tr>
+    <td height="40"><font face="Ariya">e)</font></td>
+    <td height="40" colspan="3"><font face="Ariya">Og&oacute;j&igrave; m&eacute;l&ograve;&oacute; ni &oacute; w&agrave; n&iacute;n&uacute; vg&lt;jv?</font></td>
+    <td height="40" colspan="2"><font size="3" face="Ariya"><strong>m</strong>
+          <input type="text" name="textfield12825">
+    </font></td>
+  </tr>
+  <tr>
+    <td height="40">f)</td>
+    <td height="40" colspan="3"><font face="Ariya">C}w&agrave;&aacute; m&eacute;l&ograve;&oacute; ni &oacute; w&agrave; n&iacute;n&uacute; &agrave;&aacute;d&oacute;je?</font></td>
+    <td height="40" colspan="2"><font size="3" face="Ariya"><strong>m</strong>
+          <input type="text" name="textfield12825">
+    </font></td>
+  </tr>
+  <tr>
+    <td height="40">d)</td>
+    <td height="40" colspan="3"><font face="Ariya">Vgbzn m&eacute;l&ograve;&oacute; ni &oacute; w&agrave; n&iacute;n&uacute; &agrave;&aacute;d&lt;jv?</font></td>
+    <td height="40" colspan="2"><font size="3" face="Ariya"><strong>m</strong>
+          <input type="text" name="textfield12825">
+    </font></td>
+  </tr>
+  <tr>
+    <td height="36">gb)</td>
+    <td height="36" colspan="3"><font face="Ariya">E&eacute;j&igrave; m&eacute;l&ograve;&oacute; ni &oacute; w&agrave; n&iacute;n&uacute; igba? </font></td>
+    <td height="36" colspan="2"><font size="3" face="Ariya"><strong>m</strong>
+      <input type="text" name="textfield12825">
+    </font></td>
+    </tr>
+  <tr bgcolor="#999999">
+    <td colspan="2">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr bgcolor="#999999">
+    <td colspan="6" bgcolor="#FFFFFF"><strong>4. What are these fractions and
+      percentages in Yor&ugrave;b&aacute;:</strong></td>
+    </tr>
+  <tr>
+    <td><div align="center">A.</div>
+    </td>
+    <td><div align="center">3/5</div>
+    </td>
+    <td><div align="center"><font size="3" face="Ariya">
+      <input type="text" name="textfield128242">
+    </font></div>
+    </td>
+    <td><div align="center">7/8</div>
+    </td>
+    <td><div align="center"><font size="3" face="Ariya">
+      <input type="text" name="textfield128243">
+    </font> </div>
+    </td>
+    <td><div align="center"></div>
+    </td>
+  </tr>
+  <tr>
+    <td><div align="center"></div>
+    </td>
+    <td><div align="center">1/5</div>
+    </td>
+    <td><div align="center"><font size="3" face="Ariya">
+      <input type="text" name="textfield128244">
+    </font></div>
+    </td>
+    <td><div align="center">1/3</div>
+    </td>
+    <td><div align="center"><font size="3" face="Ariya">
+      <input type="text" name="textfield128245">
+    </font> </div>
+    </td>
+    <td><div align="center"></div>
+    </td>
+  </tr>
+  <tr>
+    <td><div align="center"></div>
+    </td>
+    <td><div align="center">8/10</div>
+    </td>
+    <td><div align="center"><font size="3" face="Ariya">
+        <input type="text" name="textfield128244">
+      </font></div>
+    </td>
+    <td><div align="center"></div>
+    </td>
+    <td><div align="center"><font size="3" face="Ariya">      </font> </div>
+    </td>
+    <td><div align="center"></div>
+    </td>
+  </tr>
+  <tr>
+    <td><div align="center">B.</div>
+    </td>
+    <td><div align="center">47%</div>
+    </td>
+    <td><div align="center"><font size="3" face="Ariya">
+      <input type="text" name="textfield1282422">
+    </font></div>
+    </td>
+    <td><div align="center">70%</div>
+    </td>
+    <td><div align="center"><font size="3" face="Ariya">
+      <input type="text" name="textfield1282424">
+    </font> </div>
+    </td>
+    <td><div align="center"></div>
+    </td>
+  </tr>
+  <tr>
+    <td><div align="center"></div>
+    </td>
+    <td><div align="center">11%</div>
+    </td>
+    <td><div align="center"><font size="3" face="Ariya">
+        <input type="text" name="textfield128244">
+      </font></div>
+    </td>
+    <td><div align="center">54%</div>
+    </td>
+    <td><div align="center"><font size="3" face="Ariya">
+        <input type="text" name="textfield128245">
+      </font> </div>
+    </td>
+    <td><div align="center"></div>
+    </td>
+  </tr>
+  <tr>
+    <td><div align="center"></div>
+    </td>
+    <td><div align="center">20%</div>
+    </td>
+    <td><div align="center"><font size="3" face="Ariya">
+      <input type="text" name="textfield1282423">
+    </font></div>
+    </td>
+    <td><div align="center"></div>
+    </td>
+    <td><div align="center"> </div>
+    </td>
+    <td><div align="center"></div>
+    </td>
+  </tr>
+  <tr bgcolor="#999999">
+    <td colspan="6">&nbsp;</td>
+  </tr>
+  <tr bgcolor="#999999">
+    <td colspan="6" bgcolor="#FFFFFF">5.<font face="Ariya"> Vj&lt; m&eacute;l&ograve;&oacute; ni &oacute; w&agrave; n&iacute;n&uacute; ox&ugrave; kzzkan?</font>      <strong>(How many days are in each of these months):</strong></td>
+  </tr>
+  <tr>
+    <td><div align="center">A.</div>
+    </td>
+    <td><div align="center">September</div>
+    </td>
+    <td><div align="center"><font size="3" face="Ariya">
+        <input name="textfield128242" type="text" size="45">
+      </font></div>
+    </td>
+    <td><div align="center">April</div>
+    </td>
+    <td colspan="2"><div align="center"><font size="3" face="Ariya"> </font> </div>
+        <div align="center"><font size="3" face="Ariya">
+          <input name="textfield1282425" type="text" size="45">
+        </font></div>
+    </td>
+  </tr>
+  <tr>
+    <td><div align="center">B.</div>
+    </td>
+    <td><div align="center">August</div>
+    </td>
+    <td><div align="center"><font size="3" face="Ariya">
+        <input name="textfield128242" type="text" size="45">
+      </font></div>
+    </td>
+    <td><div align="center">October</div>
+    </td>
+    <td colspan="2"><div align="center"><font size="3" face="Ariya"> </font> </div>
+        <div align="center"><font size="3" face="Ariya">
+          <input name="textfield1282425" type="text" size="45">
+        </font></div>
+    </td>
+  </tr>
+  <tr>
+    <td><div align="center">C.</div>
+    </td>
+    <td><div align="center">February</div>
+    </td>
+    <td><div align="center"><font size="3" face="Ariya">
+        <input name="textfield128242" type="text" size="45">
+      </font></div>
+    </td>
+    <td><div align="center">November</div>
+    </td>
+    <td colspan="2"><div align="center"><font size="3" face="Ariya">      </font> </div>      <div align="center"><font size="3" face="Ariya">
+      <input name="textfield1282425" type="text" size="45">
+    </font></div>
+    </td>
+    </tr>
+  <tr>
+    <td colspan="6" bgcolor="#999999">&nbsp;</td>
+    </tr>
+</table>
+</form>
+<br>
+<TABLE cellSpacing=0 cellPadding=4 width="100%" border=0>
+    <tr bgcolor="#FFFFCC"> 
+    <td ><!-- #BeginLibraryItem "../Library/footer.lbi" --><font face="Verdana, Arial, Helvetica, sans-serif" size="2">&copy; African Studies 
+
+Institute, University of Georgia.</font><!-- #EndLibraryItem -->    </td>
+  </tr>
+</table>
+</TBODY></TABLE></UL>
+</BODY></HTML>
